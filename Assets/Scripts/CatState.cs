@@ -1,4 +1,4 @@
-﻿public enum HashKotState
+﻿public enum CatState
 { 
     IdleRight = 1,
     IdleLeft = -1,

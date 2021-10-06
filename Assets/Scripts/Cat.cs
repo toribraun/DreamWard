@@ -1,21 +1,12 @@
 ﻿using System;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
-public class HashKot : Unit
+public class Cat : Unit
 {
     [SerializeField]
     private float speed = 40F;
     [SerializeField]
     private float jumpforce = 75F;
-    [SerializeField]
-    public int pointsSum;
-    [SerializeField]
-    // private Text pointsSumText;
-
-    public int totalCollectedPoint;
-    public int pythonsToRevenge;
 
     private bool isGroundNear;
     private bool doubleJumped = false;
@@ -23,13 +14,13 @@ public class HashKot : Unit
 
     private Rigidbody2D rigitbody;
     private Animator animator;
-    private Collider2D collider;
+    private BoxCollider2D collider;
     private Vector2 standingPoint;
     private Vector2 boxSize = new Vector2 { x = 7.39F, y = 0.1F };
 
-    private HashKotState State
+    private CatState State
     {
-        get { return (HashKotState)animator.GetInteger("State"); }
+        get { return (CatState)animator.GetInteger("State"); }
         set { animator.SetInteger("State", (int)value); }
     }
 
@@ -37,11 +28,7 @@ public class HashKot : Unit
     {
         rigitbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        collider = GetComponent<Collider2D>();
-        pointsSum = 0;
-        // pointsSumText.text = "0";
-        totalCollectedPoint = 0;
-        pythonsToRevenge = 0;
+        collider = GetComponent<BoxCollider2D>();
     }
 
     private void FixedUpdate()
@@ -70,8 +57,8 @@ public class HashKot : Unit
     public void Idle()
     {
         if (turnedRight)
-            State = HashKotState.IdleRight;
-        else State = HashKotState.IdleLeft;
+            State = CatState.IdleRight;
+        else State = CatState.IdleLeft;
     }
 
     public void Run()
@@ -79,12 +66,12 @@ public class HashKot : Unit
         if (Input.GetAxis("Horizontal") >= 0)
         {
             turnedRight = true;
-            State = HashKotState.RunRight;
+            State = CatState.RunRight;
         }
         else
         {
             turnedRight = false;
-            State = HashKotState.RunLeft;
+            State = CatState.RunLeft;
         }
         if (!isGroundNear)
             SetFallState();
@@ -96,27 +83,28 @@ public class HashKot : Unit
         if (turnedRight)
         {
             if (rigitbody.velocity.y >= jumpforce / 2)
-                State = HashKotState.JumpRight;
+                State = CatState.JumpRight;
             else if (rigitbody.velocity.y < -0.5)
-                State = HashKotState.FallRight;
+                State = CatState.FallRight;
             else if (Math.Abs((int)State) < 3)
-                State = HashKotState.FallRight;
+                State = CatState.FallRight;
         }
         else
         {
             if (rigitbody.velocity.y >= jumpforce / 2)
-                State = HashKotState.JumpLeft;
+                State = CatState.JumpLeft;
             else if (rigitbody.velocity.y < -0.5)
-                State = HashKotState.FallLeft;
+                State = CatState.FallLeft;
             else if (Math.Abs((int)State) < 3)
-                State = HashKotState.FallLeft;
+                State = CatState.FallLeft;
         }
     }
+    
     public void Jump()
     {
         if (turnedRight)
-            State = HashKotState.JumpRight;
-        else State = HashKotState.JumpLeft;
+            State = CatState.JumpRight;
+        else State = CatState.JumpLeft;
         rigitbody.velocity = Vector3.zero;
         rigitbody.AddForce(transform.up * jumpforce, ForceMode2D.Impulse);
     }
@@ -146,46 +134,21 @@ public class HashKot : Unit
         isGroundNear = colliders.Length > 1;
     }
 
-    public void UpdatePoints(int points)
+    public void OnTriggerEnter2D(Collider2D collider)
     {
-        pointsSum += points;
-        // pointsSumText.text = pointsSum.ToString();
-        if (points > 0)
+        if (collider.gameObject.CompareTag("Destroyable"))
         {
-            GetComponentInChildren<SpriteRenderer>().GetComponent<AudioSource>().Play();
-            if ((totalCollectedPoint > 99)&&(pythonsToRevenge == 0))
-                EndGame();
+            throw new Exception("Works!!!!!!");
+            collider.transform.Translate(Vector3.forward * Time.deltaTime);
         }
-    }
-
-    public void GetDamage(Vector3 pythonPosition, int damage)
-    {
-        // if (damage <= pointsSum)
+        // var player = collider.GetComponent<Cat>();
+        // if (player)
         // {
-        //     var axisDirection = pythonPosition.x < transform.position.x ? 1 : -1;
-        //     rigitbody.velocity = Vector3.zero;
-        //     rigitbody.AddForce((transform.up + axisDirection * transform.right) * 40, ForceMode2D.Impulse);
-        //     UpdatePoints(-damage);
-        // }
-        // else
-        //     Die();
-    }
-
-    // public override void Die()
-    // {
-    //     SceneManager.LoadScene("MenuLose");
-    // }
-
-    public void EndGame()
-    {
-        // if (pointsSum >= 40)
-        // {
-        //     GameStates.CurrentPointSum = pointsSum;
-        //     SceneManager.LoadScene("MenuWin");
-        // }
-        // else
-        // {
-        //     SceneManager.LoadScene("MenuLose");
+        //     var platform = GetComponent<Rigidbody2D>();
+        //     if (platform.bodyType == RigidbodyType2D.Static)
+        //     {
+        //         
+        //     }
         // }
     }
 }
