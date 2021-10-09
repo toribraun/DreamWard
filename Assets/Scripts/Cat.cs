@@ -133,22 +133,4 @@ public class Cat : Unit
         Collider2D[] colliders = Physics2D.OverlapBoxAll(standingPoint, boxSize, 0);
         isGroundNear = colliders.Length > 1;
     }
-
-    public void OnTriggerEnter2D(Collider2D collider)
-    {
-        if (collider.gameObject.CompareTag("Destroyable"))
-        {
-            throw new Exception("Works!!!!!!");
-            collider.transform.Translate(Vector3.forward * Time.deltaTime);
-        }
-        // var player = collider.GetComponent<Cat>();
-        // if (player)
-        // {
-        //     var platform = GetComponent<Rigidbody2D>();
-        //     if (platform.bodyType == RigidbodyType2D.Static)
-        //     {
-        //         
-        //     }
-        // }
-    }
 }
