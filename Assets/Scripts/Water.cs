@@ -4,7 +4,7 @@ public class Water : MonoBehaviour
 {
     private Rigidbody2D rigidbody2D;
     [SerializeField]
-    private float speed = 3F;
+    private float speed = 9F;
 
     private void Awake()
     {

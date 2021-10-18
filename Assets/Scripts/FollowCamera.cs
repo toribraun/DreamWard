@@ -12,7 +12,7 @@ public class FollowCamera : MonoBehaviour
     void Awake()
     {
         if (!player)
-            player = FindObjectOfType<Unit>().transform;
+            player = FindObjectOfType<Cat>().transform;
 
     }
 

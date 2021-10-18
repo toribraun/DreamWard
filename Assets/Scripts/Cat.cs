@@ -7,7 +7,7 @@ public class Cat : Unit
     [SerializeField]
     private float speed = 40F;
     [SerializeField]
-    private float jumpforce = 75F;
+    private float jumpforce = 90F;
 
     private bool isGroundNear;
     private bool doubleJumped = false;
