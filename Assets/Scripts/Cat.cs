@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Cat : Unit
 {
@@ -132,5 +133,10 @@ public class Cat : Unit
     {
         Collider2D[] colliders = Physics2D.OverlapBoxAll(standingPoint, boxSize, 0);
         isGroundNear = colliders.Length > 1;
+    }
+    
+    public override void Die()
+    {
+        SceneManager.LoadScene("Level1");
     }
 }
