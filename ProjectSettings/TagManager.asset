@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Destroyable
   - Static
+  - Wall
   layers:
   - Default
   - TransparentFX

@@ -11,7 +11,8 @@ public class Cat : Unit
     private float jumpforce = 90F;
 
     private bool isGroundNear;
-    private bool doubleJumped = false;
+    private bool isWallNear;
+    private bool doubleJumped;
     private bool turnedRight = true;
 
     private Rigidbody2D rigitbody;
@@ -105,6 +106,7 @@ public class Cat : Unit
     
     public void Jump()
     {
+        if (isWallNear) return;
         if (turnedRight)
             State = CatState.JumpRight;
         else State = CatState.JumpLeft;
@@ -139,6 +141,8 @@ public class Cat : Unit
     
     private void OnCollisionEnter2D(Collision2D other)
     {
+        isWallNear = other.collider.CompareTag("Wall");
+        
         if (other.collider.CompareTag("Finish") && !GameStates.IsWonCurrentLevel)
         {
             GameStates.IsWonCurrentLevel = true;

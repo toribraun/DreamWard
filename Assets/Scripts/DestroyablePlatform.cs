@@ -3,12 +3,12 @@ using UnityEngine;
 
 public class DestroyablePlatform : MonoBehaviour
 {
-    private Rigidbody2D rigidbody2D;
+    private Rigidbody2D rb;
     private float delay = 0.5F;
 
     private void Start()
     {
-        rigidbody2D = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -28,7 +28,7 @@ public class DestroyablePlatform : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         // rigidbody2D.isKinematic = false;
-        rigidbody2D.constraints = RigidbodyConstraints2D.FreezeRotation;
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionX;
         // GetComponent<Collider2D>().isTrigger = true;
         yield return 0;
     }
