@@ -142,7 +142,6 @@ public class Cat : Unit
         if (other.collider.CompareTag("Finish") && !GameStates.IsWonCurrentLevel)
         {
             GameStates.IsWonCurrentLevel = true;
-            Debug.Log("You win!");
             Jump();
             StartCoroutine(EndGame());
         }
