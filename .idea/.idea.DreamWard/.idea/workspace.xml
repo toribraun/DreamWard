@@ -19,8 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a50b4b8-a72b-4c8a-94cb-4d6d55037ef0" name="Default Changelist" comment="water sprite">
-      <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
+    <list default="true" id="4a50b4b8-a72b-4c8a-94cb-4d6d55037ef0" name="Default Changelist" comment="Attempt to add finish platform on a trial level">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DreamWard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DreamWard/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ProtocolInstance.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/21/21351c74144d0233845af30ca90fde42.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/21/21351c74144d0233845af30ca90fde42.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/1e/1e3b56f6ac7125a2c5345a5a31366a13.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/1e/1e3b56f6ac7125a2c5345a5a31366a13.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,10 +38,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Users/viktoriabraun/RiderProjects/DreamWard/Library/SceneVisibilityState.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/obj/Debug/.NETFramework,Version=v4.7.1.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Cat.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DestroyablePlatform.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -56,7 +60,9 @@
   <component name="PropertiesComponent">
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -97,6 +103,7 @@
       <workItem from="1633799803020" duration="339000" />
       <workItem from="1634543146195" duration="2347000" />
       <workItem from="1634830776952" duration="4006000" />
+      <workItem from="1634838864495" duration="1039000" />
     </task>
     <task id="LOCAL-00001" summary="Init Unity Project">
       <created>1632920463238</created>
@@ -140,9 +147,20 @@
       <option name="project" value="LOCAL" />
       <updated>1634837239877</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Attempt to add finish platform on a trial level">
+      <created>1634839294900</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1634839294900</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,24 +183,7 @@
     <MESSAGE value="add platforms at level1" />
     <MESSAGE value="win level and followCamera" />
     <MESSAGE value="water sprite" />
-    <option name="LAST_COMMIT_MESSAGE" value="water sprite" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="344" y="206" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1634836878424">
-      <screen x="0" y="0" width="1280" height="800" />
-    </state>
-    <state x="344" y="206" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.800@0.0.1280.800" timestamp="1634836878424" />
-    <state x="128" y="66" key="MergeDialog" timestamp="1633799885062">
-      <screen x="0" y="0" width="1280" height="800" />
-    </state>
-    <state x="128" y="66" key="MergeDialog/0.0.1280.800@0.0.1280.800" timestamp="1633799885062" />
-    <state x="240" y="137" key="Vcs.Push.Dialog.v2" timestamp="1634837253738">
-      <screen x="0" y="0" width="1280" height="800" />
-    </state>
-    <state x="240" y="137" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1634837253738" />
-    <state x="441" y="318" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1633799819910">
-      <screen x="0" y="0" width="1280" height="800" />
-    </state>
-    <state x="441" y="318" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.800@0.0.1280.800" timestamp="1633799819910" />
+    <MESSAGE value="Attempt to add finish platform on a trial level" />
+    <option name="LAST_COMMIT_MESSAGE" value="Attempt to add finish platform on a trial level" />
   </component>
 </project>
