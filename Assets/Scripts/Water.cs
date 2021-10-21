@@ -4,7 +4,7 @@ public class Water : MonoBehaviour
 {
     private Rigidbody2D rigidbody2D;
     [SerializeField]
-    private float speed = 9F;
+    private float speed = 15F;
 
     private void Awake()
     {
@@ -13,7 +13,8 @@ public class Water : MonoBehaviour
 
     private void Update()
     {
-        MoveUp(speed);
+        if (!GameStates.IsWonCurrentLevel)
+            MoveUp(speed);
     }
     
     private void MoveUp(float speed)

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -27,6 +28,7 @@ public class Cat : Unit
 
     private void Awake()
     {
+        GameStates.IsWonCurrentLevel = false;
         rigitbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         collider = GetComponent<BoxCollider2D>();
@@ -134,6 +136,24 @@ public class Cat : Unit
         Collider2D[] colliders = Physics2D.OverlapBoxAll(standingPoint, boxSize, 0);
         isGroundNear = colliders.Length > 1;
     }
+    
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.collider.CompareTag("Finish") && !GameStates.IsWonCurrentLevel)
+        {
+            GameStates.IsWonCurrentLevel = true;
+            Debug.Log("You win!");
+            Jump();
+            StartCoroutine(EndGame());
+        }
+    }
+
+    private IEnumerator EndGame()
+    {
+        yield return new WaitForSeconds(5F);
+        SceneManager.LoadScene("Level1");
+    }
+    
     
     public override void Die()
     {
