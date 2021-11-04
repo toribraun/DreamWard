@@ -154,7 +154,7 @@ public class Cat : Unit
     private IEnumerator EndGame()
     {
         yield return new WaitForSeconds(5F);
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("MenuWin");
     }
     
     
