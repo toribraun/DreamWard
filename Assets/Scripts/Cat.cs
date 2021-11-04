@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,6 +13,7 @@ public class Cat : Unit
 
     private bool isGroundNear;
     private bool isWallNear;
+    private bool isPlatformNear;
     private bool doubleJumped;
     private bool turnedRight = true;
 
@@ -106,12 +108,10 @@ public class Cat : Unit
     
     public void Jump()
     {
-        if (isWallNear) return;
-        if (turnedRight)
-            State = CatState.JumpRight;
-        else State = CatState.JumpLeft;
+        State = turnedRight ? CatState.JumpRight : CatState.JumpLeft;
         rigitbody.velocity = Vector3.zero;
         rigitbody.AddForce(transform.up * jumpforce, ForceMode2D.Impulse);
+        isPlatformNear = false;
     }
 
     private void CheckAndJump()
@@ -136,13 +136,13 @@ public class Cat : Unit
     private void CheckGround()
     {
         Collider2D[] colliders = Physics2D.OverlapBoxAll(standingPoint, boxSize, 0);
-        isGroundNear = colliders.Length > 1;
+        isWallNear = colliders.Any(c => c.CompareTag("Wall"));
+        isPlatformNear = colliders.Any(c => c.CompareTag("Destroyable") || c.CompareTag("Static"));
+        isGroundNear = isPlatformNear || isWallNear && isPlatformNear;
     }
     
     private void OnCollisionEnter2D(Collision2D other)
     {
-        isWallNear = other.collider.CompareTag("Wall");
-        
         if (other.collider.CompareTag("Finish") && !GameStates.IsWonCurrentLevel)
         {
             GameStates.IsWonCurrentLevel = true;
@@ -154,6 +154,7 @@ public class Cat : Unit
     private IEnumerator EndGame()
     {
         yield return new WaitForSeconds(5F);
+        SceneManager.LoadScene("Level1");
         SceneManager.LoadScene("MenuWin");
     }
     
