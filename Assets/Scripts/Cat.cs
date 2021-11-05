@@ -15,13 +15,14 @@ public class Cat : Unit
     private bool isWallNear;
     private bool isPlatformNear;
     private bool doubleJumped;
-    private bool turnedRight = true;
 
     private Rigidbody2D rigitbody;
     private Animator animator;
     private BoxCollider2D collider;
+    private SpriteRenderer sprite;
     private Vector2 standingPoint;
     private Vector2 boxSize = new Vector2 { x = 7.39F, y = 0.1F };
+    private float xScale; //это должно быть чем-то типа константы или readonly, но я устала. Не трогайте пожалуйста это поле
 
     private CatState State
     {
@@ -35,6 +36,8 @@ public class Cat : Unit
         rigitbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         collider = GetComponent<BoxCollider2D>();
+        sprite = GetComponentInChildren<SpriteRenderer>();
+        xScale = transform.localScale.x;
     }
 
     private void FixedUpdate()
@@ -51,7 +54,7 @@ public class Cat : Unit
     private void Update()
     {
         if (isGroundNear)
-            Idle();
+            State = CatState.Idle;
         if (Input.GetButton("Horizontal"))
             Run();
         if (Input.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.UpArrow))
@@ -60,55 +63,27 @@ public class Cat : Unit
         }
     }
 
-    public void Idle()
-    {
-        if (turnedRight)
-            State = CatState.IdleRight;
-        else State = CatState.IdleLeft;
-    }
-
     public void Run()
     {
-        if (Input.GetAxis("Horizontal") >= 0)
-        {
-            turnedRight = true;
-            State = CatState.RunRight;
-        }
-        else
-        {
-            turnedRight = false;
-            State = CatState.RunLeft;
-        }
+        State = CatState.Run;
         if (!isGroundNear)
             SetFallState();
+        var localScale = transform.localScale; //Это всё чтобы перевернуть кота
+        if (Input.GetAxis("Horizontal") < 0)
+            localScale.x = -xScale;
+        else localScale.x = xScale;
+        transform.localScale = localScale; //Да, вот до сюда. По идее переворачивает весь объект, не только спрайт
         Move(Input.GetAxis("Horizontal"), speed);
     }
 
     public void SetFallState()
     {
-        if (turnedRight)
-        {
-            if (rigitbody.velocity.y >= jumpforce / 2)
-                State = CatState.JumpRight;
-            else if (rigitbody.velocity.y < -0.5)
-                State = CatState.FallRight;
-            else if (Math.Abs((int)State) < 3)
-                State = CatState.FallRight;
-        }
-        else
-        {
-            if (rigitbody.velocity.y >= jumpforce / 2)
-                State = CatState.JumpLeft;
-            else if (rigitbody.velocity.y < -0.5)
-                State = CatState.FallLeft;
-            else if (Math.Abs((int)State) < 3)
-                State = CatState.FallLeft;
-        }
+        State = CatState.Jump1;
     }
     
     public void Jump()
     {
-        State = turnedRight ? CatState.JumpRight : CatState.JumpLeft;
+        State = CatState.Jump1;
         rigitbody.velocity = Vector3.zero;
         rigitbody.AddForce(transform.up * jumpforce, ForceMode2D.Impulse);
         isPlatformNear = false;
