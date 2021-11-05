@@ -19,6 +19,149 @@
     <select />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="4a50b4b8-a72b-4c8a-94cb-4d6d55037ef0" name="Default Changelist" comment="add win menu">
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Frameworks/UnityPlayer.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Frameworks/libMonoPosixHelper.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Frameworks/libmonobdwgc-2.0.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/MacOS/DreamWard" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/MonoBleedingEdge/etc/mono/2.0/machine.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/MonoBleedingEdge/etc/mono/2.0/settings.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/MonoBleedingEdge/etc/mono/2.0/web.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/MonoBleedingEdge/etc/mono/4.0/machine.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/MonoBleedingEdge/etc/mono/4.0/settings.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/MonoBleedingEdge/etc/mono/4.0/web.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/MonoBleedingEdge/etc/mono/4.5/machine.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/MonoBleedingEdge/etc/mono/4.5/settings.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/MonoBleedingEdge/etc/mono/4.5/web.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/MonoBleedingEdge/etc/mono/browscap.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/MonoBleedingEdge/etc/mono/config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/MonoBleedingEdge/etc/mono/mconfig/config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/Assembly-CSharp.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/Mono.Security.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/System.ComponentModel.Composition.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/System.Configuration.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/System.Core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/System.Data.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/System.Diagnostics.StackTrace.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/System.Drawing.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/System.EnterpriseServices.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/System.Globalization.Extensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/System.IO.Compression.FileSystem.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/System.IO.Compression.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/System.Net.Http.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/System.Numerics.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/System.Runtime.Serialization.Xml.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/System.Runtime.Serialization.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/System.ServiceModel.Internals.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/System.Transactions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/System.Xml.Linq.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/System.Xml.XPath.XDocument.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/System.Xml.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/System.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/Unity.2D.Animation.Runtime.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/Unity.2D.Animation.Triangle.Runtime.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/Unity.2D.Common.Runtime.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/Unity.2D.IK.Runtime.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/Unity.2D.PixelPerfect.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/Unity.2D.SpriteShape.Runtime.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/Unity.InternalAPIEngineBridge.001.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/Unity.Mathematics.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/Unity.TextMeshPro.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/Unity.Timeline.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.AIModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.ARModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.AccessibilityModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.AndroidJNIModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.AnimationModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.AssetBundleModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.AudioModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.ClothModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.ClusterInputModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.ClusterRendererModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.CoreModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.CrashReportingModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.DSPGraphModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.DirectorModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.GIModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.GameCenterModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.GridModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.HotReloadModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.IMGUIModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.ImageConversionModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.InputLegacyModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.InputModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.JSONSerializeModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.LocalizationModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.ParticleSystemModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.PerformanceReportingModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.Physics2DModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.PhysicsModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.ProfilerModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.ScreenCaptureModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.SharedInternalsModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.SpriteMaskModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.SpriteShapeModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.StreamingModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.SubstanceModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.SubsystemsModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.TLSModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.TerrainModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.TerrainPhysicsModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.TextCoreModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.TextRenderingModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.TilemapModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.UI.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.UIElementsModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.UIElementsNativeModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.UIModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.UNETModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.UmbraModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.UnityAnalyticsModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.UnityConnectModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.UnityCurlModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.UnityTestProtocolModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.UnityWebRequestModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.VFXModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.VRModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.VehiclesModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.VideoModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.VirtualTexturingModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.WindModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.XRModule.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/UnityEngine.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/mscorlib.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Managed/netstandard.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/Resources/unity_builtin_extra" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/RuntimeInitializeOnLoads.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/ScriptingAssemblies.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/app.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/boot.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/globalgamemanagers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/globalgamemanagers.assets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/level0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/level1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/resources.assets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/sharedassets0.assets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/sharedassets0.assets.resS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/sharedassets1.assets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/Data/sharedassets1.assets.resS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/DefaultPreferences.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/MainMenu.nib/designable.nib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/MainMenu.nib/keyedobjects.nib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/Resources/unity default resources" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build1.app/Contents/_CodeSignature/CodeResources" afterDir="false" />
     <list default="true" id="4a50b4b8-a72b-4c8a-94cb-4d6d55037ef0" name="Default Changelist" comment="Fixed bug with jumping near walls, fixed colliding part of destroyable platforms">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DreamWard/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DreamWard/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DreamWard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DreamWard/.idea/workspace.xml" afterDir="false" />
@@ -3613,6 +3756,7 @@
       <workItem from="1634838864495" duration="2690000" />
       <workItem from="1634843564234" duration="345000" />
       <workItem from="1634844129790" duration="1956000" />
+      <workItem from="1636019789725" duration="2657000" />
       <workItem from="1636019789725" duration="2418000" />
       <workItem from="1636053395718" duration="377000" />
     </task>
@@ -3672,7 +3816,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634840641642</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add win menu">
+      <created>1636028798388</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1636028798388</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -3703,6 +3854,18 @@
     <MESSAGE value="water sprite" />
     <MESSAGE value="Attempt to add finish platform on a trial level" />
     <MESSAGE value="Added blue platform which ignores colliding from beneath" />
+    <MESSAGE value="add win menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="add win menu" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="240" y="137" key="Vcs.Push.Dialog.v2" timestamp="1636028839019">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="240" y="137" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1636028839018" />
+    <state x="441" y="318" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1636097415410">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="441" y="318" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.800@0.0.1280.800" timestamp="1636097415410" />
     <MESSAGE value="Fixed bug with jumping near walls, fixed colliding part of destroyable platforms" />
     <option name="LAST_COMMIT_MESSAGE" value="Fixed bug with jumping near walls, fixed colliding part of destroyable platforms" />
   </component>

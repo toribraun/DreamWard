@@ -154,13 +154,17 @@ public class Cat : Unit
     private IEnumerator EndGame()
     {
         yield return new WaitForSeconds(5F);
-        SceneManager.LoadScene("Level1");
         SceneManager.LoadScene("MenuWin");
     }
     
     
     public override void Die()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Lose");
+    }
+    
+    private IEnumerator LoseGame()
+    {
+        yield return new WaitForSeconds(1F);
     }
 }
