@@ -16,7 +16,7 @@ public class Cat : Unit
     private bool isPlatformNear;
     private bool doubleJumped;
 
-    private Rigidbody2D rigitbody;
+    private Rigidbody2D rigidbody;
     private Animator animator;
     private BoxCollider2D collider;
     private SpriteRenderer sprite;
@@ -33,7 +33,7 @@ public class Cat : Unit
     private void Awake()
     {
         GameStates.IsWonCurrentLevel = false;
-        rigitbody = GetComponent<Rigidbody2D>();
+        rigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         collider = GetComponent<BoxCollider2D>();
         sprite = GetComponentInChildren<SpriteRenderer>();
@@ -48,7 +48,10 @@ public class Cat : Unit
         {
             doubleJumped = false;
         }
-        else SetFallState();
+        else
+        {
+            SetFallState();
+        }
     }
 
     private void Update()
@@ -79,14 +82,15 @@ public class Cat : Unit
 
     public void SetFallState()
     {
-        State = CatState.Jump1;
+        State = CatState.Jump;
+        animator.SetFloat("vSpeed", rigidbody.velocity.y);
     }
     
     public void Jump()
     {
-        State = CatState.Jump1;
-        rigitbody.velocity = Vector3.zero;
-        rigitbody.AddForce(transform.up * jumpforce, ForceMode2D.Impulse);
+        State = CatState.Jump;
+        rigidbody.velocity = Vector3.zero;
+        rigidbody.AddForce(transform.up * jumpforce, ForceMode2D.Impulse);
         isPlatformNear = false;
     }
 
