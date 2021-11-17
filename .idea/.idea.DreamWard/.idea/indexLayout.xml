@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ContentModelUserStore">
-    <attachedFolders />
-    <explicitIncludes />
-    <explicitExcludes>
-      <Path>.git</Path>
-      <Path>.idea</Path>
-      <Path>.vs</Path>
-      <Path>Library</Path>
-      <Path>Logs</Path>
-      <Path>Temp</Path>
-      <Path>UserSettings</Path>
-      <Path>build1.app</Path>
-      <Path>build2.app</Path>
-      <Path>obj</Path>
-    </explicitExcludes>
-  </component>
   <component name="UserContentModel">
     <attachedFolders />
     <explicitIncludes>
@@ -46,6 +30,7 @@
       <Path>Temp</Path>
       <Path>UserSettings</Path>
       <Path>build1.app</Path>
+      <Path>build2.app</Path>
       <Path>obj</Path>
     </explicitExcludes>
   </component>

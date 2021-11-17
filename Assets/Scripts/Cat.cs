@@ -53,6 +53,7 @@ public class Cat : Unit
 
     private void Update()
     {
+        if (PauseMenu.IsPaused) return;
         if (isGroundNear)
             State = CatState.Idle;
         if (Input.GetButton("Horizontal"))
