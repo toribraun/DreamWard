@@ -9,4 +9,12 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(GameStates.CurrentLevel);
         PauseMenu.IsPaused = false;
     }
+
+    public void StartGame(string currentLevel)
+    {
+        GameStates.CurrentLevel = currentLevel;
+        GameStates.IsWonCurrentLevel = false;
+        SceneManager.LoadScene(GameStates.CurrentLevel);
+        PauseMenu.IsPaused = false;
+    }
 }

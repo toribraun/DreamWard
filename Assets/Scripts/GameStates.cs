@@ -10,6 +10,6 @@ public static class GameStates
 public enum Level
 {
     LevelWater,
-    LevelDark,
+    LevelDarkness,
     LevelSpiders
 }
