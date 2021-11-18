@@ -7,5 +7,6 @@ public class MainMenu : MonoBehaviour
     {
         Time.timeScale = 1F;
         SceneManager.LoadScene(GameStates.CurrentLevel);
+        PauseMenu.IsPaused = false;
     }
 }
