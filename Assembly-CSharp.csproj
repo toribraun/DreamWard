@@ -52,18 +52,19 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Lamp.cs" />
+     <Compile Include="Assets\Scripts\Route.cs" />
      <Compile Include="Assets\Scripts\Cat.cs" />
      <Compile Include="Assets\Scripts\GameStates.cs" />
      <Compile Include="Assets\Scripts\FollowCamera.cs" />
+     <Compile Include="Assets\Scripts\Firefly.cs" />
      <Compile Include="Assets\Scripts\CatState.cs" />
      <Compile Include="Assets\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Water.cs" />
+     <Compile Include="Assets\Scripts\FirefliesLeftScore.cs" />
      <Compile Include="Assets\Scripts\Unit.cs" />
      <Compile Include="Assets\Scripts\DestroyablePlatform.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
-     <Compile Include="Assets\Scripts\Firefly.cs" />
-     <Compile Include="Assets\Scripts\Lamp.cs" />
-     <Compile Include="Assets\Scripts\FirefliesLeftScore.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
