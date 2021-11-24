@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -15,6 +14,8 @@ public class Cat : Unit
     private bool isWallNear;
     private bool isPlatformNear;
     private bool doubleJumped;
+
+    public Firefly GatheredFirefly;
 
     private Rigidbody2D rigidbody;
     private Animator animator;
