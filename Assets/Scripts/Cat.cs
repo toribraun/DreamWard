@@ -126,14 +126,14 @@ public class Cat : Unit
     {
         if (other.collider.CompareTag("Finish") && !GameStates.IsWonCurrentLevel)
         {
-            GameStates.IsWonCurrentLevel = true;
-            Jump();
             StartCoroutine(EndGame());
         }
     }
 
-    private IEnumerator EndGame()
+    public IEnumerator EndGame()
     {
+        GameStates.IsWonCurrentLevel = true;
+        Jump();
         yield return new WaitForSeconds(5F);
         SceneManager.LoadScene("MenuWin");
     }

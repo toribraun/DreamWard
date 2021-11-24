@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Firefly : MonoBehaviour
 {
-    private Collider2D cat;
+    private Cat cat;
     
     private enum State
     {
@@ -32,13 +32,14 @@ public class Firefly : MonoBehaviour
         state += 1;
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
+        cat = other.GetComponent<Cat>();
         if (!(state is State.Free)) return;
-        if (other.collider.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            other.collider.GetComponent<Cat>().GatheredFirefly = this;
-            cat = other.collider;
+            if (cat.GatheredFirefly != null) return;
+            cat.GatheredFirefly = this;
             Destroy(GetComponent<Collider2D>());
             NextState();
         }

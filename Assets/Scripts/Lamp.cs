@@ -2,8 +2,14 @@ using UnityEngine;
 
 public class Lamp : MonoBehaviour
 {
+    public static int FirefliesLeft;
+    
     private Cat cat;
-    private int firefliesLeft = 5;
+
+    private void Start()
+    {
+        FirefliesLeft = 2;
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -13,7 +19,13 @@ public class Lamp : MonoBehaviour
         {
             cat.GatheredFirefly.lampPosition = transform.position;
             cat.GatheredFirefly.NextState();
-            firefliesLeft--;
+            cat.GatheredFirefly = null;
+            FirefliesLeft--;
+            FirefliesLeftScore.UpdateFirefliesLeftScore();
+            if (FirefliesLeft == 0)
+            {
+                StartCoroutine(cat.EndGame());
+            }
         }
     }
 }
