@@ -11,7 +11,6 @@ public class Lamp : MonoBehaviour
     {
         FirefliesLeft = 2;
         bounds = GetComponent<Collider2D>().bounds;
-        
     }
 
     private void OnTriggerEnter2D(Collider2D other)
