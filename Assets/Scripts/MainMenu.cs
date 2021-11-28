@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
     {
         Time.timeScale = 1F;
         SceneManager.LoadScene(GameStates.CurrentLevel);
-        PauseMenu.IsPaused = false;
+        GameStates.IsPaused = false;
     }
 
     public void StartGame(string currentLevel)
@@ -15,12 +15,12 @@ public class MainMenu : MonoBehaviour
         GameStates.CurrentLevel = currentLevel;
         GameStates.IsWonCurrentLevel = false;
         SceneManager.LoadScene(GameStates.CurrentLevel);
-        PauseMenu.IsPaused = false;
+        GameStates.IsPaused = false;
     }
 
     public void LoadMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
-        PauseMenu.IsPaused = false;
+        GameStates.IsPaused = false;
     }
 }

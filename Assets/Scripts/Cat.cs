@@ -57,7 +57,7 @@ public class Cat : Unit
 
     private void Update()
     {
-        if (PauseMenu.IsPaused) return;
+        if (GameStates.IsPaused) return;
         if (isGroundNear)
             State = CatState.Idle;
         if (Input.GetButton("Horizontal"))
@@ -126,15 +126,16 @@ public class Cat : Unit
     {
         if (other.collider.CompareTag("Finish") && !GameStates.IsWonCurrentLevel)
         {
+            GameStates.IsWonCurrentLevel = true;
+            other.collider.GetComponent<AudioSource>().Play();
             StartCoroutine(EndGame());
         }
     }
 
     public IEnumerator EndGame()
     {
-        GameStates.IsWonCurrentLevel = true;
         Jump();
-        yield return new WaitForSeconds(5F);
+        yield return new WaitForSeconds(10F);
         SceneManager.LoadScene("MenuWin");
     }
     
