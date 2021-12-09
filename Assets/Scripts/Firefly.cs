@@ -15,6 +15,9 @@ public class Firefly : Unit
 
     public Vector3 lampPosition;
     
+    [SerializeField]
+    private AudioSource sound;
+    
     // For Following Route
     [SerializeField] 
     private Transform[] routes;
@@ -31,6 +34,7 @@ public class Firefly : Unit
         tParam = 0f;
         speedModifier = 0.75f;
         basePosition = transform.position;
+        sound = GetComponent<AudioSource>();
     }
 
 
@@ -83,6 +87,7 @@ public class Firefly : Unit
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        sound.Play();
         cat = other.GetComponent<Cat>();
         if (!(state is State.Free)) return;
         if (other.CompareTag("Player"))

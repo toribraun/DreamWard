@@ -13,6 +13,7 @@
           <e p="FirefliesLeftScore.cs" t="Include" />
           <e p="Firefly.cs" t="Include" />
           <e p="FollowCamera.cs" t="Include" />
+          <e p="FollowCamera2.cs" t="Include" />
           <e p="GameStates.cs" t="Include" />
           <e p="Lamp.cs" t="Include" />
           <e p="MainMenu.cs" t="Include" />
