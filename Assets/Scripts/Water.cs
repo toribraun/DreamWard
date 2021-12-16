@@ -4,6 +4,7 @@ public class Water : MonoBehaviour
 {
     private Rigidbody2D rigidbody2D;
     private AudioSource audio;
+    private Animator animator;
     [SerializeField]
     private float speed = 15F;
 
@@ -11,6 +12,7 @@ public class Water : MonoBehaviour
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
         audio = GetComponent<AudioSource>();
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -28,6 +30,7 @@ public class Water : MonoBehaviour
         if (GameStates.IsWonCurrentLevel)
         {
             audio.Stop();
+            animator.SetBool("WaterUp", false);
             transform.position = Vector3.MoveTowards(
                 transform.position, 
                 transform.position - transform.up, speed / 2 * Time.deltaTime);
