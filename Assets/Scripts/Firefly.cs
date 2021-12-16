@@ -3,7 +3,7 @@ using UnityEngine;
 public class Firefly : Unit
 {
     private Cat cat;
-    
+
     private enum State
     {
         Free,

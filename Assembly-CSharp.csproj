@@ -64,8 +64,8 @@
      <Compile Include="Assets\Scripts\Water.cs" />
      <Compile Include="Assets\Scripts\Unit.cs" />
      <Compile Include="Assets\Scripts\DestroyablePlatform.cs" />
-     <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\FirefliesLeftScore.cs" />
+     <Compile Include="Assets\Scripts\MainMenu.cs" />
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.18f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -645,9 +645,6 @@
  <Reference Include="Unity.2D.PixelPerfect">
  <HintPath>/Users/viktoriabraun/RiderProjects/DreamWard/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
  </Reference>
- <Reference Include="Unity.2D.Tilemap.Editor">
- <HintPath>/Users/viktoriabraun/RiderProjects/DreamWard/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
- </Reference>
  <Reference Include="PsdPlugin">
  <HintPath>/Users/viktoriabraun/RiderProjects/DreamWard/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
  </Reference>
@@ -666,9 +663,6 @@
  <Reference Include="Unity.2D.IK.Editor">
  <HintPath>/Users/viktoriabraun/RiderProjects/DreamWard/Library/ScriptAssemblies/Unity.2D.IK.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>/Users/viktoriabraun/RiderProjects/DreamWard/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
- </Reference>
  <Reference Include="Unity.2D.Psdimporter.Editor">
  <HintPath>/Users/viktoriabraun/RiderProjects/DreamWard/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
  </Reference>
@@ -678,17 +672,11 @@
  <Reference Include="Unity.InternalAPIEditorBridge.001">
  <HintPath>/Users/viktoriabraun/RiderProjects/DreamWard/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
  </Reference>
- <Reference Include="UnityEditor.UI">
- <HintPath>/Users/viktoriabraun/RiderProjects/DreamWard/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
  <Reference Include="Unity.PlasticSCM.Editor">
  <HintPath>/Users/viktoriabraun/RiderProjects/DreamWard/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
  <HintPath>/Users/viktoriabraun/RiderProjects/DreamWard/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>/Users/viktoriabraun/RiderProjects/DreamWard/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics">
  <HintPath>/Users/viktoriabraun/RiderProjects/DreamWard/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
@@ -725,6 +713,22 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.2D.Tilemap.Editor.csproj">
+      <Project>{48fd021d-6157-d39f-1263-5fc058df5ca9}</Project>
+      <Name>Unity.2D.Tilemap.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
+      <Project>{b6dc7925-75eb-c9aa-7b53-da0b9a8f6d58}</Project>
+      <Name>Unity.2D.Sprite.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{e940a7dd-e0cd-464a-5211-1c20d3fc7e43}</Project>
+      <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{d3021acd-9b39-180c-9064-78d79b7cef39}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
