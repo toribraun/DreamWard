@@ -31,7 +31,7 @@ public class Firefly : Unit
     private void Start()
     {
         routeToGo = 0;
-        tParam = 0f;
+        tParam = Random.Range(0f, 1f);
         speedModifier = 0.75f;
         basePosition = transform.position;
         sound = GetComponent<AudioSource>();
@@ -87,12 +87,12 @@ public class Firefly : Unit
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        sound.Play();
         cat = other.GetComponent<Cat>();
         if (!(state is State.Free)) return;
         if (other.CompareTag("Player"))
         {
             if (cat.GatheredFirefly != null) return;
+            sound.Play();
             cat.GatheredFirefly = this;
             Destroy(GetComponent<Collider2D>());
             NextState();
