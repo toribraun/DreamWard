@@ -16,7 +16,11 @@
           <e p="FollowCamera2.cs" t="Include" />
           <e p="GameStates.cs" t="Include" />
           <e p="Lamp.cs" t="Include" />
+          <e p="MainMenu.cs" t="Include" />
+          <e p="PauseMenu.cs" t="Include" />
+          <e p="Route.cs" t="Include" />
           <e p="Unit.cs" t="Include" />
+          <e p="Water.cs" t="Include" />
         </e>
       </e>
       <e p="DreamWard.sln" t="IncludeFlat" />
