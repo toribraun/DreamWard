@@ -6,6 +6,7 @@ public class Lamp : MonoBehaviour
     
     [SerializeField]
     private AudioSource sound;
+    private Animator animator;
 
     private Cat cat;
     private Bounds bounds;
@@ -15,6 +16,7 @@ public class Lamp : MonoBehaviour
         FirefliesLeft = 6;
         bounds = GetComponent<Collider2D>().bounds;
         sound = GetComponent<AudioSource>();
+        animator = GetComponent<Animator>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -31,7 +33,7 @@ public class Lamp : MonoBehaviour
             FirefliesLeftScore.UpdateFirefliesLeftScore();
             if (FirefliesLeft == 0)
             {
-                StartCoroutine(cat.EndGame());
+                StartCoroutine(cat.EndGame(animator));
             }
         }
     }
