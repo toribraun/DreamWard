@@ -3,6 +3,7 @@ using UnityEngine;
 public class Firefly : Unit
 {
     private Cat cat;
+    private Animator animator;
 
     private enum State
     {
@@ -35,6 +36,9 @@ public class Firefly : Unit
         speedModifier = 0.75f;
         basePosition = transform.position;
         sound = GetComponent<AudioSource>();
+        animator = GetComponentInChildren<Animator>();
+        var offset = Random.Range(0f, 1f);
+        animator.Play("Firefly", -1, offset);
     }
 
 

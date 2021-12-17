@@ -13,7 +13,7 @@ public class Lamp : MonoBehaviour
 
     private void Start()
     {
-        FirefliesLeft = 6;
+        FirefliesLeft = 6; //6
         bounds = GetComponent<Collider2D>().bounds;
         sound = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
