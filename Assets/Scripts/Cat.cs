@@ -128,13 +128,16 @@ public class Cat : Unit
         {
             GameStates.IsWonCurrentLevel = true;
             other.collider.GetComponent<AudioSource>().Play();
-            StartCoroutine(EndGame());
+            StartCoroutine(EndGame(other.gameObject.GetComponent<Animator>()));
         }
     }
 
-    public IEnumerator EndGame()
+    public IEnumerator EndGame(Animator animator)
     {
-        Jump();
+        animator.Play("Finish");
+        animator.SetBool("Finished", true);
+        var cameraAnimator = GameObject.Find("Main Camera").GetComponentInChildren<Animator>();
+        cameraAnimator.Play("CameraLight");
         yield return new WaitForSeconds(10F);
         SceneManager.LoadScene("MenuWin");
     }
