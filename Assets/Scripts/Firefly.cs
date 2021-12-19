@@ -31,7 +31,7 @@ public class Firefly : Unit
 
     private void Start()
     {
-        routeToGo = 0;
+        routeToGo = Random.Range(0, 1);
         tParam = Random.Range(0f, 1f);
         speedModifier = 0.75f;
         basePosition = transform.position;

@@ -24,4 +24,9 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
         GameStates.IsPaused = false;
     }
+    
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
