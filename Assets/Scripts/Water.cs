@@ -6,7 +6,7 @@ public class Water : MonoBehaviour
     private AudioSource audio;
     private Animator animator;
     [SerializeField]
-    private float speed = 15F;
+    private float speed = 5F;
 
     private void Awake()
     {
@@ -22,6 +22,7 @@ public class Water : MonoBehaviour
         else
             audio.enabled = true;
         
+        speed += 0.01F;
         MoveUp(speed);
     }
     
