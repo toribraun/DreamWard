@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Lamp : MonoBehaviour
 {
-    public static int FirefliesLeft;
+    public int FirefliesLeft;
     [SerializeField] 
     public FirefliesLeftScore firefliesLeftScore;
     [SerializeField]
