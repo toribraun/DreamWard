@@ -3,7 +3,8 @@ using UnityEngine;
 public class Lamp : MonoBehaviour
 {
     public static int FirefliesLeft;
-    
+    [SerializeField] 
+    public FirefliesLeftScore firefliesLeftScore;
     [SerializeField]
     private AudioSource sound;
     private Animator animator;
@@ -30,7 +31,7 @@ public class Lamp : MonoBehaviour
             cat.GatheredFirefly.NextState();
             cat.GatheredFirefly = null;
             FirefliesLeft--;
-            FirefliesLeftScore.UpdateFirefliesLeftScore();
+            firefliesLeftScore.UpdateFirefliesLeftScore(6 - FirefliesLeft - 1);
             if (FirefliesLeft == 0)
             {
                 StartCoroutine(cat.EndGame(animator));

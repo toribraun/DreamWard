@@ -1,18 +1,24 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class FirefliesLeftScore : MonoBehaviour
 {
-    private static Text firefliesLeftText;
+    [SerializeField] 
+    private GameObject[] fireflyLampsOn;
     
     private void Start()
     {
-        firefliesLeftText = GetComponent<Text>();
-        UpdateFirefliesLeftScore();
+        // fireflyLampsOn = GetComponent<GameObject>();
+        // fireflyLampsOn = GetComponentsInChildren<GameObject>();
+        foreach (var lamp in fireflyLampsOn)
+        {
+            lamp.SetActive(false);
+        }
     }
     
-    public static void UpdateFirefliesLeftScore()
+    public void UpdateFirefliesLeftScore(int fireflyNumber)
     {
-        firefliesLeftText.text = Lamp.FirefliesLeft.ToString();
+        fireflyLampsOn[fireflyNumber].SetActive(true);
     }
 }
