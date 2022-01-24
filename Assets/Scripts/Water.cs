@@ -2,17 +2,15 @@ using UnityEngine;
 
 public class Water : MonoBehaviour 
 {
-    private Rigidbody2D rigidbody2D;
     private AudioSource audio;
     private Animator animator;
-    [SerializeField]
-    private float speed = 5F;
+    private float speed = 7F;
 
     private void Awake()
     {
-        rigidbody2D = GetComponent<Rigidbody2D>();
         audio = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
+        InvokeRepeating("SpeedUp", 0.0f, 0.1f);
     }
 
     private void Update()
@@ -22,8 +20,12 @@ public class Water : MonoBehaviour
         else
             audio.enabled = true;
         
-        speed += 0.01F;
         MoveUp(speed);
+    }
+
+    private void SpeedUp()
+    {
+        speed += 0.03F;
     }
     
     private void MoveUp(float speed)
