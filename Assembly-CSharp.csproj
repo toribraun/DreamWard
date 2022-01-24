@@ -53,6 +53,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Cat.cs" />
+     <Compile Include="Assets\Scripts\SoundSettings.cs" />
      <Compile Include="Assets\Scripts\GameStates.cs" />
      <Compile Include="Assets\Scripts\Route.cs" />
      <Compile Include="Assets\Scripts\Lamp.cs" />
