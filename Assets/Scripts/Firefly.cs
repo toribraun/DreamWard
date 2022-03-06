@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Firefly : Unit
 {
+    public DarknessLevel LevelManager;
+    
     private Cat cat;
     private Animator animator;
 
@@ -51,7 +53,7 @@ public class Firefly : Unit
         
         if (state is State.OnCat)
         {
-            Move(cat.transform.position + new Vector3(5, 5));
+            Move(LevelManager.player.transform.position + new Vector3(5, 5));
         }
 
         if (state is State.InLamp)
@@ -91,13 +93,12 @@ public class Firefly : Unit
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        cat = other.GetComponent<Cat>();
         if (!(state is State.Free)) return;
         if (other.CompareTag("Player"))
         {
-            if (cat.GatheredFirefly != null) return;
+            if (LevelManager.GatheredFirefly != null) return;
             sound.Play();
-            cat.GatheredFirefly = this;
+            LevelManager.GatheredFirefly = this;
             Destroy(GetComponent<Collider2D>());
             NextState();
         }

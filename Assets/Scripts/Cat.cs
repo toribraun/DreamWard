@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Cat : Unit
 {
+    [HideInInspector]
+    public LevelManager LevelManager;
+    
     [SerializeField]
     private float speed = 40F;
     [SerializeField]
@@ -15,7 +18,7 @@ public class Cat : Unit
     private bool isPlatformNear;
     private bool doubleJumped;
 
-    public Firefly GatheredFirefly;
+    // public Firefly GatheredFirefly;
 
     private Rigidbody2D rigidbody;
     private Animator animator;
@@ -121,35 +124,15 @@ public class Cat : Unit
         isPlatformNear = colliders.Any(c => c.CompareTag("Destroyable") || c.CompareTag("Static"));
         isGroundNear = isPlatformNear || isWallNear && isPlatformNear;
     }
-    
-    private void OnCollisionEnter2D(Collision2D other)
+
+    public void Win()
     {
-        if (other.collider.CompareTag("Finish") && !GameStates.IsWonCurrentLevel)
-        {
-            GameStates.IsWonCurrentLevel = true;
-            other.collider.GetComponent<AudioSource>().Play();
-            StartCoroutine(EndGame(other.gameObject.GetComponent<Animator>()));
-        }
+        LevelManager.Win();
     }
 
-    public IEnumerator EndGame(Animator animator)
-    {
-        animator.Play("Finish");
-        animator.SetBool("Finished", true);
-        var cameraAnimator = GameObject.Find("Main Camera").GetComponentInChildren<Animator>();
-        cameraAnimator.Play("CameraLight");
-        yield return new WaitForSeconds(10F);
-        SceneManager.LoadScene("MenuWin");
-    }
-    
-    
     public override void Die()
     {
-        SceneManager.LoadScene("Lose");
-    }
-    
-    private IEnumerator LoseGame()
-    {
-        yield return new WaitForSeconds(1F);
+        LevelManager.Lose();
+        base.Die();
     }
 }
