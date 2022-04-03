@@ -5277,7 +5277,7 @@ GameObject:
   - component: {fileID: 889830600}
   m_Layer: 0
   m_Name: SpiderWeb
-  m_TagString: Static
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5292,7 +5292,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.004336804, y: 0.021884918}
