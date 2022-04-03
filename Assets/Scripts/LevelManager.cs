@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public abstract class LevelManager : MonoBehaviour
 {
     public Cat player;
-    public FollowCamera3 camera;
+    public FollowCamera camera;
     
     public void StartLevel()
     {
@@ -23,7 +23,7 @@ public abstract class LevelManager : MonoBehaviour
     {
         if (camera) 
             return;
-        camera = FindObjectOfType<FollowCamera3>();
+        camera = FindObjectOfType<FollowCamera>();
         if (!player)
             SetPlayerObject();
         camera.player = player.transform;

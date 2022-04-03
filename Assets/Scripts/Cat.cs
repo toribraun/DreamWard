@@ -9,10 +9,11 @@ public class Cat : Unit
     public LevelManager LevelManager;
     
     [SerializeField]
-    private float speed = 40F;
+    public float speed = 40F;
     [SerializeField]
-    private float jumpforce = 90F;
+    public float jumpforce = 90F;
 
+    public bool IsLowSpeed;
     private bool isGroundNear;
     private bool isWallNear;
     private bool isPlatformNear;
