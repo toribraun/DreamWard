@@ -19,19 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a50b4b8-a72b-4c8a-94cb-4d6d55037ef0" name="Default Changelist" comment="added ttf">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DreamWard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DreamWard/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level3.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/34/341efaace6fa4dbb39cd7683490a05af.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/34/341efaace6fa4dbb39cd7683490a05af.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
-    </list>
+    <list default="true" id="4a50b4b8-a72b-4c8a-94cb-4d6d55037ef0" name="Default Changelist" comment="added ttf" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +27,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/RectMask2D.cs" root0="SKIP_HIGHLIGHTING" />
@@ -177,7 +164,7 @@
       <workItem from="1648978260450" duration="4381000" />
       <workItem from="1649304702587" duration="250000" />
       <workItem from="1649305033414" duration="62000" />
-      <workItem from="1649305367408" duration="297000" />
+      <workItem from="1649305367408" duration="638000" />
     </task>
     <task id="LOCAL-00001" summary="Init Unity Project">
       <created>1632920463238</created>
@@ -291,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648985736292</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="some changes">
+      <created>1649305757494</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1649305757494</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,7 +325,8 @@
     <MESSAGE value="Changed water speed update" />
     <MESSAGE value="added Spiders level and SpiderWeb" />
     <MESSAGE value="added ttf" />
-    <option name="LAST_COMMIT_MESSAGE" value="added ttf" />
+    <MESSAGE value="some changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="some changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="100" y="100" width="1080" height="600" key="VCS.FileHistoryDialog" timestamp="1648268000975">
