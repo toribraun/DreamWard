@@ -8,13 +8,13 @@ public class WebSpider : MonoBehaviour
     [SerializeField]
     private DestroyablePlatform platform;
     [SerializeField]
-    private float maxScale;
-    [SerializeField]
     private float minScale;
     [SerializeField]
-    private float scaleChange;
-
-    private Vector3 _scaleChange;
+    private float maxScale;
+    [SerializeField]
+    private float movingSpeed;
+    [SerializeField]
+    private float fallingSpeed;
 
     private bool shouldGoDown;
     
@@ -22,7 +22,6 @@ public class WebSpider : MonoBehaviour
     {
         web = GameObject.Find("String").gameObject;
         spider = GameObject.Find("Spider").gameObject;
-        _scaleChange = new Vector3(0.0f, scaleChange, 0.0f);
         shouldGoDown = web.transform.localScale.y > minScale;
     }
 
@@ -32,17 +31,29 @@ public class WebSpider : MonoBehaviour
         {
             if (shouldGoDown)
             {
-                web.transform.localScale -= _scaleChange;
-                web.transform.localPosition += _scaleChange / 2;
-                spider.transform.localPosition += _scaleChange;
+                web.transform.localScale = Vector3.MoveTowards(
+                    web.transform.localScale, 
+                    web.transform.localScale - web.transform.up, movingSpeed * Time.deltaTime);
+                web.transform.localPosition = Vector3.MoveTowards(
+                    web.transform.localPosition, 
+                    web.transform.localPosition + web.transform.up, movingSpeed / 2 * Time.deltaTime);
+                spider.transform.localPosition = Vector3.MoveTowards(
+                    spider.transform.localPosition, 
+                    spider.transform.localPosition + spider.transform.up, movingSpeed * Time.deltaTime);
                 if (web.transform.localScale.y <= minScale)
                     shouldGoDown = false;
             }
             else
             {
-                web.transform.localScale += _scaleChange;
-                web.transform.localPosition -= _scaleChange / 2;
-                spider.transform.localPosition -= _scaleChange;
+                web.transform.localScale = Vector3.MoveTowards(
+                    web.transform.localScale, 
+                    web.transform.localScale + web.transform.up, movingSpeed * Time.deltaTime);
+                web.transform.localPosition = Vector3.MoveTowards(
+                    web.transform.localPosition, 
+                    web.transform.localPosition - web.transform.up, movingSpeed / 2 * Time.deltaTime);
+                spider.transform.localPosition = Vector3.MoveTowards(
+                    spider.transform.localPosition, 
+                    spider.transform.localPosition - spider.transform.up, movingSpeed * Time.deltaTime);
                 if (web.transform.localScale.y >= maxScale)
                     shouldGoDown = true;
             }
@@ -50,7 +61,9 @@ public class WebSpider : MonoBehaviour
         else
         {
             web.transform.localScale = Vector3.zero;
-            spider.transform.localPosition += new Vector3(0.0f, -0.1f, 0.0f);
+            spider.transform.localPosition = Vector3.MoveTowards(
+                spider.transform.localPosition, 
+                spider.transform.localPosition - spider.transform.up, fallingSpeed * Time.deltaTime);
         }
     }
 }
