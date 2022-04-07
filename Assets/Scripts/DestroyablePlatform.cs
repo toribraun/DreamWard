@@ -3,13 +3,15 @@ using UnityEngine;
 
 public class DestroyablePlatform : MonoBehaviour
 {
+    private GameObject platform;
     private Rigidbody2D rb;
     private Collider2D col;
     private float delay = 0.5F;
-    private bool isFalling;
+    public bool isFalling;
 
     private void Start()
     {
+        platform = GameObject.FindWithTag("Destroyable");
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
     }
