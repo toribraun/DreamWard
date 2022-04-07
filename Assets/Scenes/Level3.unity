@@ -8053,9 +8053,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platform: {fileID: 276838738}
-  maxScale: 20
   minScale: 7
-  scaleChange: 0.0075
+  maxScale: 20
+  movingSpeed: 3.5
+  fallingSpeed: 100
 --- !u!1 &1411497754
 GameObject:
   m_ObjectHideFlags: 0
