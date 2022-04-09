@@ -6,6 +6,9 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Materials" t="Include">
+          <e p="Blur.shader" t="Include" />
+        </e>
         <e p="Scripts" t="Include">
           <e p="Cat.cs" t="Include" />
           <e p="CatState.cs" t="Include" />
@@ -22,6 +25,7 @@
           <e p="PauseMenu.cs" t="Include" />
           <e p="Route.cs" t="Include" />
           <e p="SoundSettings.cs" t="Include" />
+          <e p="SpiderLegs.cs" t="Include" />
           <e p="SpidersLevel.cs" t="Include" />
           <e p="SpiderWeb.cs" t="Include" />
           <e p="Timer.cs" t="Include" />
@@ -29,6 +33,8 @@
           <e p="Valve.cs" t="Include" />
           <e p="Water.cs" t="Include" />
           <e p="WaterLevel.cs" t="Include" />
+          <e p="WebSpider.cs" t="Include" />
+          <e p="WebSpiderCollision.cs" t="Include" />
         </e>
       </e>
       <e p="DreamWard.sln" t="IncludeFlat" />
