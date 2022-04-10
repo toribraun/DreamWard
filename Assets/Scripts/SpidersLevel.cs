@@ -2,8 +2,10 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SpidersLevel : LevelManager 
+public class SpidersLevel : LevelManager
 {
+    private string levelName = "SpidersLevel";
+    
     [SerializeField] private float leftBorder; // -56
     [SerializeField] private float rightBorder; //810
     [SerializeField] private float topBorder; //200
@@ -28,6 +30,7 @@ public class SpidersLevel : LevelManager
 
     private IEnumerator EndGame()
     {
+        scoreCounter.SaveHighScore(levelName);
         yield return new WaitForSeconds(5F);
         SceneManager.LoadScene("MenuWin");
     }
