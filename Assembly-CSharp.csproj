@@ -52,7 +52,9 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\WebString.cs" />
      <Compile Include="Assets\Scripts\FollowCamera.cs" />
+     <Compile Include="Assets\Scripts\Spider.cs" />
      <Compile Include="Assets\Scripts\Cat.cs" />
      <Compile Include="Assets\Scripts\SoundSettings.cs" />
      <Compile Include="Assets\Scripts\GameStates.cs" />
@@ -68,6 +70,7 @@
      <Compile Include="Assets\Scripts\Water.cs" />
      <Compile Include="Assets\Scripts\Unit.cs" />
      <Compile Include="Assets\Scripts\Timer.cs" />
+     <Compile Include="Assets\Scripts\ScoreCounter.cs" />
      <Compile Include="Assets\Scripts\ParallaxBehaviour.cs" />
      <Compile Include="Assets\Scripts\SpidersLevel.cs" />
      <Compile Include="Assets\Scripts\WebSpider.cs" />
@@ -78,7 +81,6 @@
      <Compile Include="Assets\Scripts\Valve.cs" />
      <Compile Include="Assets\Scripts\SpiderWeb.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
-     <Compile Include="Assets\Scripts\ScoreCounter.cs" />
      <None Include="Assets\Materials\Blur.shader" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

@@ -2,8 +2,8 @@
 
 public class WebSpider : MonoBehaviour
 {
-    private GameObject web;
-    private GameObject spider;
+    private WebString web;
+    private Spider spider;
     
     [SerializeField]
     private DestroyablePlatform platform;
@@ -20,8 +20,8 @@ public class WebSpider : MonoBehaviour
     
     private void Start()
     {
-        web = GameObject.Find("String").gameObject;
-        spider = GameObject.Find("Spider").gameObject;
+        web = GetComponentInChildren<WebString>();
+        spider = GetComponentInChildren<Spider>();
         shouldGoDown = web.transform.localScale.y > minScale;
     }
 
