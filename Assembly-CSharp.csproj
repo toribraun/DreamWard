@@ -64,20 +64,20 @@
      <Compile Include="Assets\Scripts\Intro.cs" />
      <Compile Include="Assets\Scripts\LevelManager.cs" />
      <Compile Include="Assets\Scripts\PauseMenu.cs" />
+     <Compile Include="Assets\Scripts\SpiderLegs.cs" />
      <Compile Include="Assets\Scripts\Water.cs" />
      <Compile Include="Assets\Scripts\Unit.cs" />
      <Compile Include="Assets\Scripts\Timer.cs" />
+     <Compile Include="Assets\Scripts\ParallaxBehaviour.cs" />
      <Compile Include="Assets\Scripts\SpidersLevel.cs" />
      <Compile Include="Assets\Scripts\WebSpider.cs" />
      <Compile Include="Assets\Scripts\DestroyablePlatform.cs" />
      <Compile Include="Assets\Scripts\WaterLevel.cs" />
+     <Compile Include="Assets\Scripts\WebSpiderCollision.cs" />
      <Compile Include="Assets\Scripts\FirefliesLeftScore.cs" />
      <Compile Include="Assets\Scripts\Valve.cs" />
      <Compile Include="Assets\Scripts\SpiderWeb.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
-     <Compile Include="Assets\Scripts\SpiderLegs.cs" />
-     <Compile Include="Assets\Scripts\WebSpiderCollision.cs" />
-     <Compile Include="Assets\Scripts\ParallaxBehaviour.cs" />
      <None Include="Assets\Materials\Blur.shader" />
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.18f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
