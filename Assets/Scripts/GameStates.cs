@@ -3,7 +3,7 @@ using UnityEngine;
 
 public static class GameStates
 {
-    public static string CurrentLevel = "Level1";
+    public static string CurrentLevel = "WaterLevel1";
     public static bool IsWonCurrentLevel = false;
     public static bool IsPaused = false;
 }

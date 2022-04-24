@@ -14,7 +14,7 @@ public class DarknessLevel : LevelManager
     [SerializeField] private float rightBorder; //810
     [SerializeField] private float topBorder; //200
     [SerializeField] private float bottomBorder; //-40
-    
+
     private void Start()
     {
         StartLevel();

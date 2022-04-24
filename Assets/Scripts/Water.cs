@@ -4,7 +4,7 @@ public class Water : MonoBehaviour
 {
     private AudioSource audio;
     private Animator animator;
-    private float speed = 7F;
+    public float Speed;
 
     private void Awake()
     {
@@ -20,12 +20,12 @@ public class Water : MonoBehaviour
         else
             audio.enabled = true;
         
-        MoveUp(speed);
+        MoveUp(Speed);
     }
 
     private void SpeedUp()
     {
-        speed += 0.03F;
+        Speed += 0.03F;
     }
     
     private void MoveUp(float speed)

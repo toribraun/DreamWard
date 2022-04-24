@@ -3,7 +3,23 @@
   <component name="ContentModelUserStore">
     <attachedFolders />
     <explicitIncludes />
-    <explicitExcludes />
+    <explicitExcludes>
+      <Path>.git</Path>
+      <Path>.idea</Path>
+      <Path>.vs</Path>
+      <Path>DreamWard.app</Path>
+      <Path>Logs</Path>
+      <Path>Temp</Path>
+      <Path>UserSettings</Path>
+      <Path>build.app</Path>
+      <Path>build1.app</Path>
+      <Path>build2.app</Path>
+      <Path>build3.app</Path>
+      <Path>build4</Path>
+      <Path>build5</Path>
+      <Path>build6</Path>
+      <Path>obj</Path>
+    </explicitExcludes>
   </component>
   <component name="UserContentModel">
     <attachedFolders />

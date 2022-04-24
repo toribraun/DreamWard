@@ -9,6 +9,7 @@ public class WaterLevel : LevelManager
     private string levelName = "WaterLevel";
     
     private Valve valve;
+    private Water water;
     
     [SerializeField] private float cameraHorizontalBorder; // 53
     [SerializeField] private float topBorder; // 600
@@ -23,6 +24,13 @@ public class WaterLevel : LevelManager
         player.LevelManager = this;
         valve = FindObjectOfType<Valve>();
         valve.player = player;
+        water = FindObjectOfType<Water>();
+        water.Speed = Level switch
+        {
+            1 => 5F,
+            2 => 7F,
+            _ => 9F
+        };
     }
 
     public override void Win()

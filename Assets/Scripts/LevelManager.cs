@@ -8,6 +8,7 @@ public abstract class LevelManager : MonoBehaviour
     public Cat player;
     public FollowCamera camera;
     public ScoreCounter scoreCounter;
+    public int Level = 1; 
     
     public void StartLevel()
     {
