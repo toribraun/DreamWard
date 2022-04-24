@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class WaterLevel : LevelManager
 {
+    private string levelName = "WaterLevel";
+    
     private Valve valve;
     
     [SerializeField] private float cameraHorizontalBorder; // 53
@@ -30,6 +32,7 @@ public class WaterLevel : LevelManager
 
     private IEnumerator EndGame()
     {
+        scoreCounter.SaveHighScore(levelName);
         valve.animator.Play("Finish");
         valve.animator.SetBool("Finished", true);
         var cameraAnimator = camera.GetComponentInChildren<Animator>();

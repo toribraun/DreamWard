@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class DarknessLevel : LevelManager
 {
+    private string levelName = "DarknessLevel";
+    
     private Lamp lamp;
     private Firefly[] fireflies;
     public Firefly GatheredFirefly;
@@ -42,13 +44,12 @@ public class DarknessLevel : LevelManager
 
     private IEnumerator EndGame()
     {
+        scoreCounter.SaveHighScore(levelName);
         lamp.animator.Play("Finish");
         lamp.animator.SetBool("Finished", true);
         var cameraAnimator = camera.GetComponentInChildren<Animator>();
         cameraAnimator.Play("CameraLight");
         yield return new WaitForSeconds(10F);
         SceneManager.LoadScene("MenuWin");
-    }
-    
-    
+    } 
 }

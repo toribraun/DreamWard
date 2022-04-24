@@ -1,4 +1,5 @@
 ﻿using System;
+using Assets.Scripts;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -6,11 +7,13 @@ public abstract class LevelManager : MonoBehaviour
 {
     public Cat player;
     public FollowCamera camera;
+    public ScoreCounter scoreCounter;
     
     public void StartLevel()
     {
         SetPlayerObject();
         SetCamera();
+        SetScoreCounter();
     }
     
     private void SetPlayerObject()
@@ -27,6 +30,12 @@ public abstract class LevelManager : MonoBehaviour
         if (!player)
             SetPlayerObject();
         camera.player = player.transform;
+    }
+
+    private void SetScoreCounter()
+    {
+        if (!scoreCounter)
+            scoreCounter = gameObject.AddComponent<ScoreCounter>();
     }
 
     public virtual void Win()
