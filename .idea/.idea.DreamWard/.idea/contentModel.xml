@@ -34,6 +34,7 @@
             <e p="SpidersLevel" t="Include">
               <e p="Spider.cs" t="Include" />
               <e p="SpiderLegs.cs" t="Include" />
+              <e p="SpidersCounter.cs" t="Include" />
               <e p="SpidersLevel.cs" t="Include" />
               <e p="SpiderWeb.cs" t="Include" />
               <e p="WebSpider.cs" t="Include" />

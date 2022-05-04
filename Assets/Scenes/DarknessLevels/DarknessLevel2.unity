@@ -2274,7 +2274,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 8cc71e14b5fd4c243a033f984864be77, type: 3}
+    m_Font: {fileID: 12800000, guid: 015bc32a034464b7799ab4c0d4ee19b1, type: 3}
     m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
@@ -15679,6 +15679,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 96992699}
   camera: {fileID: 1263368198}
+  scoreCounter: {fileID: 0}
+  Level: 1
   GatheredFirefly: {fileID: 0}
   leftBorder: -56
   rightBorder: 810
