@@ -275,6 +275,7 @@ GameObject:
   - component: {fileID: 351591551}
   - component: {fileID: 351591550}
   - component: {fileID: 351591549}
+  - component: {fileID: 351591552}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -347,6 +348,14 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!222 &351591552
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351591548}
+  m_CullTransparentMesh: 1
 --- !u!1 &408266748
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,7 +408,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 780}
+  m_ReferenceResolution: {x: 1100, y: 750}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3

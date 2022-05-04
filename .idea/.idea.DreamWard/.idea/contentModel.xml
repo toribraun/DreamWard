@@ -10,35 +10,48 @@
           <e p="Blur.shader" t="Include" />
         </e>
         <e p="Scripts" t="Include">
-          <e p="Cat.cs" t="Include" />
-          <e p="CatState.cs" t="Include" />
-          <e p="DarknessLevel.cs" t="Include" />
-          <e p="DestroyablePlatform.cs" t="Include" />
-          <e p="FirefliesLeftScore.cs" t="Include" />
-          <e p="Firefly.cs" t="Include" />
-          <e p="FollowCamera.cs" t="Include" />
-          <e p="GameStates.cs" t="Include" />
-          <e p="Intro.cs" t="Include" />
-          <e p="Lamp.cs" t="Include" />
-          <e p="LevelManager.cs" t="Include" />
-          <e p="MainMenu.cs" t="Include" />
-          <e p="ParallaxBehaviour.cs" t="Include" />
-          <e p="PauseMenu.cs" t="Include" />
-          <e p="Route.cs" t="Include" />
-          <e p="ScoreCounter.cs" t="Include" />
-          <e p="SoundSettings.cs" t="Include" />
-          <e p="Spider.cs" t="Include" />
-          <e p="SpiderLegs.cs" t="Include" />
-          <e p="SpidersLevel.cs" t="Include" />
-          <e p="SpiderWeb.cs" t="Include" />
-          <e p="Timer.cs" t="Include" />
-          <e p="Unit.cs" t="Include" />
-          <e p="Valve.cs" t="Include" />
-          <e p="Water.cs" t="Include" />
-          <e p="WaterLevel.cs" t="Include" />
-          <e p="WebSpider.cs" t="Include" />
-          <e p="WebSpiderCollision.cs" t="Include" />
-          <e p="WebString.cs" t="Include" />
+          <e p="Camera" t="Include">
+            <e p="FollowCamera.cs" t="Include" />
+            <e p="ParallaxBehaviour.cs" t="Include" />
+          </e>
+          <e p="Levels" t="Include">
+            <e p="Cat" t="Include">
+              <e p="Cat.cs" t="Include" />
+              <e p="CatState.cs" t="Include" />
+            </e>
+            <e p="DarknessLevel" t="Include">
+              <e p="DarknessLevel.cs" t="Include" />
+              <e p="FirefliesLeftScore.cs" t="Include" />
+              <e p="Firefly.cs" t="Include" />
+              <e p="Lamp.cs" t="Include" />
+              <e p="Route.cs" t="Include" />
+              <e p="Timer.cs" t="Include" />
+            </e>
+            <e p="DestroyablePlatform.cs" t="Include" />
+            <e p="GameStates.cs" t="Include" />
+            <e p="LevelManager.cs" t="Include" />
+            <e p="ScoreCounter.cs" t="Include" />
+            <e p="SpidersLevel" t="Include">
+              <e p="Spider.cs" t="Include" />
+              <e p="SpiderLegs.cs" t="Include" />
+              <e p="SpidersLevel.cs" t="Include" />
+              <e p="SpiderWeb.cs" t="Include" />
+              <e p="WebSpider.cs" t="Include" />
+              <e p="WebString.cs" t="Include" />
+            </e>
+            <e p="Unit.cs" t="Include" />
+            <e p="WaterLevel" t="Include">
+              <e p="Valve.cs" t="Include" />
+              <e p="Water.cs" t="Include" />
+              <e p="WaterLevel.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Menu" t="Include">
+            <e p="Intro.cs" t="Include" />
+            <e p="MainMenu.cs" t="Include" />
+            <e p="PauseMenu.cs" t="Include" />
+            <e p="SoundSettings.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="DreamWard.sln" t="IncludeFlat" />
