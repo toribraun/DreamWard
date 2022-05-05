@@ -4,14 +4,16 @@ using UnityEngine.UI;
 public class SoundSettings : MonoBehaviour
 {
     [SerializeField]
-    private Sprite currentStateImage;
+    private Button currentState;
     [SerializeField]
-    private Sprite nextStateImage;
-    [SerializeField]
+    private Button nextState;
+    //[SerializeField]
     private Button button;
 
     private void Start()
     {
+        button = currentState;
+        nextState.gameObject.SetActive(false);
         if (!AudioListener.pause) return;
         ChangeButton();
     }
@@ -24,10 +26,13 @@ public class SoundSettings : MonoBehaviour
 
     private void ChangeButton()
     {
-        currentStateImage = button.image.sprite;
-        button.image.sprite = nextStateImage;
         button.interactable = false;
+        nextState.gameObject.SetActive(true);
+        button = nextState;
         button.interactable = true;
-        nextStateImage = currentStateImage;
+        button.Select();
+        currentState.gameObject.SetActive(false);
+        nextState = currentState;
+        currentState = button;
     }
 }

@@ -24,7 +24,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
         GameStates.IsPaused = false;
     }
-    
+
+    public void LoadLevelsMenu()
+    {
+        SceneManager.LoadScene("LevelsMenu");
+    }
     public void QuitGame()
     {
         Application.Quit();
