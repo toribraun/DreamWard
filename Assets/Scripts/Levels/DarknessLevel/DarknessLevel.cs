@@ -7,7 +7,8 @@ public class DarknessLevel : LevelManager
     private string levelName = "DarknessLevel";
     
     private Lamp lamp;
-    private Firefly[] fireflies;
+    [HideInInspector]
+    public Firefly[] fireflies;
     public Firefly GatheredFirefly;
     
     [SerializeField] private float leftBorder; // -56

@@ -19,15 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a50b4b8-a72b-4c8a-94cb-4d6d55037ef0" name="Default Changelist" comment="added victory at SpidersLevel and changed files structure">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/SpidersLevel/SpidersCounter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/SpidersLevel/SpidersCounter.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DreamWard/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DreamWard/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="4a50b4b8-a72b-4c8a-94cb-4d6d55037ef0" name="Default Changelist" comment="added spiders counter">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DreamWard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DreamWard/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DarknessLevels/DarknessLevel2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DarknessLevels/DarknessLevel2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DarknessLevels/DarknessLevel1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DarknessLevels/DarknessLevel1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SpidersLevels/SpiderLevel1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SpidersLevels/SpiderLevel1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels/DarknessLevel/DarknessLevel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/DarknessLevel/DarknessLevel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels/DarknessLevel/Lamp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/DarknessLevel/Lamp.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ProtocolInstance.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
@@ -35,9 +34,6 @@
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/34/341efaace6fa4dbb39cd7683490a05af.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/34/341efaace6fa4dbb39cd7683490a05af.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/5b/5b8725b0b969ae5f3f4d7995ecd6d978.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/5b/5b8725b0b969ae5f3f4d7995ecd6d978.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,6 +121,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Levels/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Levels/WaterLevel/WaterLevel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Levels/SpidersLevel/SpidersCounter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Levels/DarknessLevel/DarknessLevel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Levels/DarknessLevel/Lamp.cs" />
       </list>
     </option>
   </component>
@@ -224,7 +222,7 @@
       <workItem from="1650984553465" duration="735000" />
       <workItem from="1651490173117" duration="774000" />
       <workItem from="1651680319586" duration="94000" />
-      <workItem from="1651680435919" duration="4400000" />
+      <workItem from="1651680435919" duration="5190000" />
     </task>
     <task id="LOCAL-00001" summary="Init Unity Project">
       <created>1632920463238</created>
@@ -373,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651684767191</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="added spiders counter">
+      <created>1651686333562</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1651686333565</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,13 +423,14 @@
     <MESSAGE value="added level numbers" />
     <MESSAGE value="added darkness level 2" />
     <MESSAGE value="added victory at SpidersLevel and changed files structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="added victory at SpidersLevel and changed files structure" />
+    <MESSAGE value="added spiders counter" />
+    <option name="LAST_COMMIT_MESSAGE" value="added spiders counter" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="240" y="137" key="Vcs.Push.Dialog.v2" timestamp="1651684916902">
+    <state x="240" y="137" key="Vcs.Push.Dialog.v2" timestamp="1651686339912">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="137" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1651684916902" />
+    <state x="240" y="137" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1651686339912" />
     <state x="282" y="126" width="715" height="548" key="find.popup" timestamp="1651490945002">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
