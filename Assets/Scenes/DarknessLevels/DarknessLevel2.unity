@@ -15680,7 +15680,8 @@ MonoBehaviour:
   player: {fileID: 96992699}
   camera: {fileID: 1263368198}
   scoreCounter: {fileID: 0}
-  Level: 1
+  Level: 2
+  fireflies: []
   GatheredFirefly: {fileID: 0}
   leftBorder: -56
   rightBorder: 810
