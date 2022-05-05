@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\Levels\ScoreCounter.cs" />
     <Compile Include="Assets\Scripts\Camera\ParallaxBehaviour.cs" />
     <Compile Include="Assets\Scripts\Levels\SpidersLevel\SpidersLevel.cs" />
+    <Compile Include="Assets\Scripts\Menu\HighlightFix.cs" />
     <Compile Include="Assets\Scripts\Levels\SpidersLevel\WebSpider.cs" />
     <Compile Include="Assets\Scripts\Menu\Intro.cs" />
     <Compile Include="Assets\Scripts\Levels\DestroyablePlatform.cs" />
@@ -82,7 +83,6 @@
     <Compile Include="Assets\Scripts\Levels\WaterLevel\Valve.cs" />
     <Compile Include="Assets\Scripts\Levels\SpidersLevel\SpiderWeb.cs" />
     <Compile Include="Assets\Scripts\Menu\MainMenu.cs" />
-    <Compile Include="Assets\Scripts\Menu\HighlightFix.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
