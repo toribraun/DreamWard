@@ -33,7 +33,7 @@ public class Lamp : MonoBehaviour
             LevelManager.GatheredFirefly.NextState();
             LevelManager.GatheredFirefly = null;
             FirefliesLeft--;
-            firefliesLeftScore.UpdateFirefliesLeftScore(6 - FirefliesLeft - 1);
+            firefliesLeftScore.UpdateFirefliesLeftScore(LevelManager.fireflies.Length - FirefliesLeft - 1);
             if (FirefliesLeft == 0)
             {
                 player.Win();
