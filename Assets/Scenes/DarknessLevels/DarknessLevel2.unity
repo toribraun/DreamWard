@@ -3879,7 +3879,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 242704376}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 40.7, y: -52.9, z: 0}
+  m_LocalPosition: {x: 200, y: -5, z: 0}
   m_LocalScale: {x: 1.776789, y: 1.76416, z: 1}
   m_Children:
   - {fileID: 1841314188}
@@ -15680,7 +15680,6 @@ MonoBehaviour:
   camera: {fileID: 1263368198}
   scoreCounter: {fileID: 0}
   Level: 2
-  levelName: DarknessLevel2
   fireflies: []
   GatheredFirefly: {fileID: 0}
   leftBorder: -56

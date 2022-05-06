@@ -9,9 +9,10 @@ public class Levels : MonoBehaviour
     private List<string> levelsChain = new List<string>
     {
         "WaterLevel1",
-        "SpidersLevel1",
         "DarknessLevel1",
-        "WaterLevel2"
+        "SpidersLevel1",
+        "WaterLevel2",
+        "DarknessLevel2",
     };
     [SerializeField]
     private Button Next;
@@ -41,7 +42,8 @@ public class Levels : MonoBehaviour
             buttonsChain[i].gameObject.SetActive(false);
             var highScore = PlayerPrefs.GetInt(levelsChain[i] + "HighScore");
             //Debug.Log($"{levelsChain[i] + "HighScore"} is {highScore}");
-            var result = highScore > 0 & highScore < 3000;
+            // var result = highScore > 0 & highScore < 3500;
+            var result = highScore > 0;
             //Debug.Log($"Result is {result}");
             if (i < buttonsChain.Count - 1)
             {
