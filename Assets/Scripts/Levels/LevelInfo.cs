@@ -1,17 +1,19 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.UI;
 
-class LevelInfo
+class LevelInfo : MonoBehaviour
 {
-    static int nextId = 1;
-    int Id;
-    string LevelName;
-    //GameObject LevelPicture;
-    //GameObject LevelResult;
-    public LevelInfo(string name)
-    {
-        Id = nextId;
-        nextId++;
-        LevelName = name;
-    }
+    [SerializeField]
+    public int Id;
+    [SerializeField]
+    public string LevelName;
+    [SerializeField]
+    public string LevelText;
+    [SerializeField]
+    public Sprite LevelPicture;
+    [SerializeField]
+    public Sprite LevelLostPicture;
+    [SerializeField]
+    public Sprite LevelWonPicture;
 }

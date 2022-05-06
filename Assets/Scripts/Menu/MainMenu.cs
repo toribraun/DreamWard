@@ -25,6 +25,11 @@ public class MainMenu : MonoBehaviour
         GameStates.IsPaused = false;
     }
 
+    public void ResetPlayerData()
+    {
+        PlayerPrefs.DeleteAll();
+    }
+
     public void LoadLevelsMenu()
     {
         SceneManager.LoadScene("LevelsMenu");

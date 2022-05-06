@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class SpidersLevel : LevelManager
 {
+    [SerializeField]
     private string levelName = "SpidersLevel";
     private WebSpider[] webSpiders;
     
@@ -41,7 +42,7 @@ public class SpidersLevel : LevelManager
 
     private IEnumerator EndGame()
     {
-        scoreCounter.SaveHighScore(levelName + Level.ToString());
+        scoreCounter.SaveHighScore(levelName);
         yield return new WaitForSeconds(5F);
         SceneManager.LoadScene("MenuWin");
     }

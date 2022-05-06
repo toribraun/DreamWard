@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class DarknessLevel : LevelManager
 {
+    [SerializeField]
     private string levelName = "DarknessLevel";
     
     private Lamp lamp;
@@ -45,7 +46,7 @@ public class DarknessLevel : LevelManager
 
     private IEnumerator EndGame()
     {
-        scoreCounter.SaveHighScore(levelName+Level.ToString());
+        scoreCounter.SaveHighScore(levelName);
         lamp.animator.Play("Finish");
         lamp.animator.SetBool("Finished", true);
         var cameraAnimator = camera.GetComponentInChildren<Animator>();
