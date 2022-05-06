@@ -5571,9 +5571,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99873967ceb6faf439b7dd881f78133e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentStateImage: {fileID: 21300000, guid: ca6460c69d02df24da57737e731e6926, type: 3}
-  nextStateImage: {fileID: 21300000, guid: 947a70720839b7e49bebbac94134798a, type: 3}
-  button: {fileID: 878063437}
+  currentState: {fileID: 0}
+  nextState: {fileID: 0}
 --- !u!1 &887048066
 GameObject:
   m_ObjectHideFlags: 0
@@ -6152,6 +6151,8 @@ MonoBehaviour:
   player: {fileID: 8278557701201667658}
   camera: {fileID: 519420034}
   scoreCounter: {fileID: 0}
+  Level: 1
+  levelName: WaterLevel1
   cameraHorizontalBorder: 53
   topBorder: 600
   bottomBorder: 0
@@ -11586,6 +11587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbc023b24c5c46eb85bf498219f4b07d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Speed: 0
 --- !u!61 &1752189494
 BoxCollider2D:
   m_ObjectHideFlags: 0

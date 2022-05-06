@@ -45,7 +45,7 @@ public class DarknessLevel : LevelManager
 
     private IEnumerator EndGame()
     {
-        scoreCounter.SaveHighScore(levelName);
+        scoreCounter.SaveHighScore(levelName+Level.ToString());
         lamp.animator.Play("Finish");
         lamp.animator.SetBool("Finished", true);
         var cameraAnimator = camera.GetComponentInChildren<Animator>();

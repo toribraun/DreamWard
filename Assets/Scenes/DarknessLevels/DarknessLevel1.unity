@@ -432,9 +432,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99873967ceb6faf439b7dd881f78133e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentStateImage: {fileID: 21300000, guid: ca6460c69d02df24da57737e731e6926, type: 3}
-  nextStateImage: {fileID: 21300000, guid: 947a70720839b7e49bebbac94134798a, type: 3}
-  button: {fileID: 19649123}
+  currentState: {fileID: 0}
+  nextState: {fileID: 0}
 --- !u!114 &19649123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12047,6 +12046,7 @@ MonoBehaviour:
   camera: {fileID: 1263368198}
   scoreCounter: {fileID: 0}
   Level: 1
+  levelName: DarknessLevel1
   fireflies: []
   GatheredFirefly: {fileID: 0}
   leftBorder: -56

@@ -26,5 +26,6 @@ public class ScoreCounter : MonoBehaviour
         if (storedSCore == 0 | storedSCore > Mathf.RoundToInt(score))
             PlayerPrefs.SetInt(keyName, Mathf.RoundToInt(score));
         Debug.Log($"After saving the stored score is {PlayerPrefs.GetInt(keyName)}");
+        Levels.needToUpdate = true;
     }
 }

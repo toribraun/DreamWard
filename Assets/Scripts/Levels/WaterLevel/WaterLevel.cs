@@ -40,7 +40,7 @@ public class WaterLevel : LevelManager
 
     private IEnumerator EndGame()
     {
-        scoreCounter.SaveHighScore(levelName);
+        scoreCounter.SaveHighScore(levelName + Level.ToString());
         valve.animator.Play("Finish");
         valve.animator.SetBool("Finished", true);
         var cameraAnimator = camera.GetComponentInChildren<Animator>();

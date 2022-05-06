@@ -13,25 +13,94 @@ public class Levels : MonoBehaviour
         "DarknessLevel1",
         "WaterLevel2"
     };
-
+    [SerializeField]
+    private Button Next;
+    [SerializeField]
+    private Button Previous;
     [SerializeField]
     private List<Button> buttonsChain = new List<Button>();
+    public int currentLevelId = 0;
+    private bool[] levelsAvailable;
+
+    public static bool needToUpdate = false;
+
+    private bool NextLevelAvailable 
+    { 
+        get { return (currentLevelId + 1 < buttonsChain.Count) && levelsAvailable[currentLevelId + 1]; }
+    }
+    private bool PreviousLevelAvailable
+    {
+        get { return (currentLevelId > 0) && levelsAvailable[currentLevelId - 1]; }
+    }
 
     private void Start()
     {
+        levelsAvailable = new bool[buttonsChain.Count];
+        levelsAvailable[0] = true;
         // PlayerPrefs.DeleteAll();
-        for (var i = 0; i < buttonsChain.Count - 1; i++)
+        for (var i = 0; i < buttonsChain.Count; i++)
         {
+            buttonsChain[i].gameObject.SetActive(false);
             var highScore = PlayerPrefs.GetInt(levelsChain[i] + "HighScore");
-            Debug.Log($"{levelsChain[i] + "HighScore"} is {highScore}");
+            //Debug.Log($"{levelsChain[i] + "HighScore"} is {highScore}");
             var result = highScore > 0 & highScore < 3000;
-            Debug.Log($"Result is {result}");
-            buttonsChain[i + 1].interactable = result;
-            if (result) continue;
-            for (var j = i; j < buttonsChain.Count - 1; j++)
+            //Debug.Log($"Result is {result}");
+            if (i < buttonsChain.Count - 1)
             {
-                buttonsChain[i + 1].interactable = false;
+                levelsAvailable[i + 1] = result;
             }
         }
+        buttonsChain[currentLevelId].gameObject.SetActive(true);
+        Next.interactable = NextLevelAvailable;
+        Previous.interactable = PreviousLevelAvailable;
+    }
+
+    private void Update()
+    {
+        if (needToUpdate)
+        {
+            needToUpdate = false;
+            UpdateAvailability();
+        }
+    }
+
+    public void UpdateAvailability()
+    {
+        for (var i = 0; i < buttonsChain.Count; i++)
+        {
+            var highScore = PlayerPrefs.GetInt(levelsChain[i] + "HighScore");
+            //Debug.Log($"{levelsChain[i] + "HighScore"} is {highScore}");
+            var result = highScore > 0 & highScore < 3000;
+            //Debug.Log($"Result {i} is {result}");
+
+            if (i < buttonsChain.Count - 1) levelsAvailable[i + 1] = result;
+        }
+        Previous.interactable = PreviousLevelAvailable;
+        Next.interactable = NextLevelAvailable;
+    }
+
+    public void ChooseNextLevel()
+    {
+        if (NextLevelAvailable)
+        {
+            buttonsChain[currentLevelId].gameObject.SetActive(false);
+            currentLevelId++;
+            buttonsChain[currentLevelId].gameObject.SetActive(true);
+        }
+        Previous.interactable = PreviousLevelAvailable;
+        Next.interactable = NextLevelAvailable;
+    }
+
+    public void ChoosePreviousLevel()
+    {
+        if (PreviousLevelAvailable)
+        {
+            buttonsChain[currentLevelId].gameObject.SetActive(false);
+            currentLevelId--;
+            buttonsChain[currentLevelId].gameObject.SetActive(true);
+            Next.interactable = NextLevelAvailable;
+        }
+        Previous.interactable = PreviousLevelAvailable;
+        Next.interactable = NextLevelAvailable;
     }
 }
