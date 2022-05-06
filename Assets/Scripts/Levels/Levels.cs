@@ -22,8 +22,6 @@ public class Levels : MonoBehaviour
     public int currentLevelId = 0;
     private bool[] levelsAvailable;
 
-    public static bool needToUpdate = false;
-
     private bool NextLevelAvailable 
     { 
         get { return (currentLevelId + 1 < buttonsChain.Count) && levelsAvailable[currentLevelId + 1]; }
@@ -53,30 +51,6 @@ public class Levels : MonoBehaviour
         buttonsChain[currentLevelId].gameObject.SetActive(true);
         Next.interactable = NextLevelAvailable;
         Previous.interactable = PreviousLevelAvailable;
-    }
-
-    private void Update()
-    {
-        if (needToUpdate)
-        {
-            needToUpdate = false;
-            UpdateAvailability();
-        }
-    }
-
-    public void UpdateAvailability()
-    {
-        for (var i = 0; i < buttonsChain.Count; i++)
-        {
-            var highScore = PlayerPrefs.GetInt(levelsChain[i] + "HighScore");
-            //Debug.Log($"{levelsChain[i] + "HighScore"} is {highScore}");
-            var result = highScore > 0 & highScore < 3000;
-            //Debug.Log($"Result {i} is {result}");
-
-            if (i < buttonsChain.Count - 1) levelsAvailable[i + 1] = result;
-        }
-        Previous.interactable = PreviousLevelAvailable;
-        Next.interactable = NextLevelAvailable;
     }
 
     public void ChooseNextLevel()
