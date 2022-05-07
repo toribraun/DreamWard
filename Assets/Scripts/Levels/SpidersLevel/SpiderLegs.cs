@@ -4,7 +4,8 @@ public class SpiderLegs : MonoBehaviour
 {
     // private AudioSource audio;
     // private Animator animator;
-    private float speed = 7F;
+    [SerializeField]
+    private float speed = 9F;
     private int rotateLegDirection = -1;
 
     private void Awake()
