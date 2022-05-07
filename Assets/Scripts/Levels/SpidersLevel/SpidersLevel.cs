@@ -11,10 +11,10 @@ public class SpidersLevel : LevelManager
     [HideInInspector]
     public int SpidersLeftCount;
     
-    [SerializeField] private float leftBorder; // -56
-    [SerializeField] private float rightBorder; //810
-    [SerializeField] private float topBorder; //200
-    [SerializeField] private float bottomBorder; //-40
+    [SerializeField] private float leftBorder; // -100
+    [SerializeField] private float rightBorder; //650
+    [SerializeField] private float topBorder; //150
+    [SerializeField] private float bottomBorder; //-100
     
     private void Start()
     {
