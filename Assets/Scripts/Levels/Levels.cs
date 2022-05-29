@@ -78,7 +78,7 @@ public class Levels : MonoBehaviour
 
     public void StartCurrentLevel()
     {
-        Controller.GetComponent<MainMenu>().StartGame(levels[currentLevelId].LevelName);
+        MenuController.StartGame(levels[currentLevelId].LevelName);
     }
 
     public void ChooseNextLevel()
@@ -108,5 +108,10 @@ public class Levels : MonoBehaviour
         {
             levelResultImage.sprite = levels[currentLevelId].LevelLostPicture;
         }
+    }
+
+    public void Return() 
+    {
+        MenuController.LoadMainMenu();
     }
 }

@@ -38,4 +38,9 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = state ? 0f : 1f;
         GameStates.IsPaused = state;
     }
+
+    public void LoadMenu()
+    {
+        MenuController.LoadLevelsMenu();
+    }
 }

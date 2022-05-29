@@ -132,8 +132,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5526770}
-  - component: {fileID: 5526769}
   - component: {fileID: 5526768}
+  - component: {fileID: 5526769}
   m_Layer: 0
   m_Name: ButtonsController
   m_TagString: Untagged
@@ -246,7 +246,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5526767}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 999b02abb2eb414f8f94599682a6880d, type: 3}
+  m_Script: {fileID: 11500000, guid: aef9f01c053168d4689c70b97c55831d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &5526770
@@ -1661,8 +1661,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 5526769}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: LoadLevelsMenu
+        m_TargetAssemblyTypeName: Assets.Scripts.Menu.WinMenu, Assembly-CSharp
+        m_MethodName: GoToMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

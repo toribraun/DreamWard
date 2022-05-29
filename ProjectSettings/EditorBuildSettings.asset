@@ -27,7 +27,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu/OldMenuWin.unity
     guid: dc173de1a2daf48d5be3bb8281d81f6c
   - enabled: 1
-    path: Assets/Scenes/Menu/MenuLose.unity
+    path: Assets/Scenes/Menu/OldMenuLose.unity
     guid: db3b990d2347d4f388847cf851c58e24
   - enabled: 0
     path: 
@@ -53,4 +53,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu/MenuWin.unity
     guid: ad03edde996f79941954e6e760b81f16
+  - enabled: 1
+    path: Assets/Scenes/Menu/MenuLose.unity
+    guid: 94eee998596e38645b90078c3900e44c
   m_configObjects: {}
