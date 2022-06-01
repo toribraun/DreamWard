@@ -59,9 +59,11 @@
     <Compile Include="Assets\Scripts\Levels\SpidersLevel\Spider.cs" />
     <Compile Include="Assets\Scripts\Levels\Cat\Cat.cs" />
     <Compile Include="Assets\Scripts\Menu\SoundSettings.cs" />
+    <Compile Include="Assets\Scripts\Menu\WinMenu.cs" />
     <Compile Include="Assets\Scripts\Levels\GameStates.cs" />
     <Compile Include="Assets\Scripts\Levels\DarknessLevel\Route.cs" />
     <Compile Include="Assets\Scripts\Levels\DarknessLevel\Lamp.cs" />
+    <Compile Include="Assets\Scripts\Menu\MenuController.cs" />
     <Compile Include="Assets\Scripts\Levels\DarknessLevel\DarknessLevel.cs" />
     <Compile Include="Assets\Scripts\Levels\DarknessLevel\Firefly.cs" />
     <Compile Include="Assets\Scripts\Levels\Cat\CatState.cs" />
@@ -81,13 +83,12 @@
     <Compile Include="Assets\Scripts\Menu\Intro.cs" />
     <Compile Include="Assets\Scripts\Levels\DestroyablePlatform.cs" />
     <Compile Include="Assets\Scripts\Levels\WaterLevel\WaterLevel.cs" />
+    <Compile Include="Assets\Scripts\Menu\LoseMenu.cs" />
     <Compile Include="Assets\Scripts\Levels\DarknessLevel\FirefliesLeftScore.cs" />
     <Compile Include="Assets\Scripts\Levels\WaterLevel\Valve.cs" />
     <Compile Include="Assets\Scripts\Levels\SpidersLevel\SpiderWeb.cs" />
     <Compile Include="Assets\Scripts\Menu\MainMenu.cs" />
-    <Compile Include="Assets\Scripts\Menu\MenuController.cs" />
-    <Compile Include="Assets\Scripts\Menu\LoseMenu.cs" />
-    <Compile Include="Assets\Scripts\Menu\WinMenu.cs" />
+    <Compile Include="Assets\Scripts\Levels\SpidersLevel\LeafPlatform.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

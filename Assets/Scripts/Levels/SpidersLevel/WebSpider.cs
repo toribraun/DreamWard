@@ -9,7 +9,7 @@ public class WebSpider : MonoBehaviour
     public SpidersLevel LevelManager;
     
     [SerializeField]
-    private DestroyablePlatform platform;
+    private LeafPlatform platform;
     [SerializeField]
     private float minScale;
     [SerializeField]
@@ -23,6 +23,8 @@ public class WebSpider : MonoBehaviour
     
     private void Start()
     {
+        if (platform == null)
+            platform = GetComponentInParent<LeafPlatform>();
         web = GetComponentInChildren<WebString>();
         spider = GetComponentInChildren<Spider>();
         shouldGoDown = web.transform.localScale.y > minScale;
@@ -63,7 +65,7 @@ public class WebSpider : MonoBehaviour
         }
         else
         {
-            
+            transform.SetParent(null);
             web.transform.localScale = Vector3.zero;
             spider.transform.localPosition = Vector3.MoveTowards(
                 spider.transform.localPosition, 
