@@ -28,6 +28,10 @@ public class LeafPlatform : MonoBehaviour
             if (contactPoint.y > platformPositionCenter.y)
                 StartCoroutine(Fall());
         }
+        else
+        {
+            Physics2D.IgnoreCollision(other.collider, col);
+        }
         if (isFalling)
         {
             Physics2D.IgnoreCollision(other.collider, col);
