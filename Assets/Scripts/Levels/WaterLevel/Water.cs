@@ -15,11 +15,8 @@ public class Water : MonoBehaviour
 
     private void Update()
     {
-        if (GameStates.IsPaused)
-            audio.enabled = false;
-        else
-            audio.enabled = true;
-        
+        audio.enabled = !GameStates.IsPaused;
+
         MoveUp(Speed);
     }
 

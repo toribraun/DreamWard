@@ -4,6 +4,7 @@ using UnityEngine;
 public class LeafPlatform : MonoBehaviour
 {
     private GameObject platform;
+    private AudioSource audio;
     private Rigidbody2D rb;
     private Collider2D col;
     private Animator anim;
@@ -13,9 +14,15 @@ public class LeafPlatform : MonoBehaviour
     private void Start()
     {
         platform = GameObject.FindWithTag("Destroyable");
+        audio = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
         anim = GetComponent<Animator>();
+    }
+    
+    private void Update()
+    {
+        audio.enabled = !GameStates.IsPaused;
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -40,6 +47,7 @@ public class LeafPlatform : MonoBehaviour
 
     IEnumerator Fall()
     {
+        audio.Stop();
         yield return new WaitForSeconds(delay);
         isFalling = true;
         col.isTrigger = true;

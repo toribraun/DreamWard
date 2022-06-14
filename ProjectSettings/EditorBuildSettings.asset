@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/DarknessLevels/DarknessLevel2.unity
     guid: a7e0cf55de81e4139b2221f80114d99d
   - enabled: 1
-    path: Assets/Scenes/SpidersLevels/SpidersLevel1.unity
+    path: Assets/Scenes/SpidersLevels/SpidersLevel2.unity
     guid: 2eef70d631b884d7c9cd87e8851b7fa5
   - enabled: 0
     path: Assets/Scenes/Menu/OldMenuWin.unity
