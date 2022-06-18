@@ -10,11 +10,12 @@ public class LeafPlatform : MonoBehaviour
     private Animator anim;
     private float delay = 0.0F;
     public bool isFalling;
+    private bool hasAudio;
 
     private void Start()
     {
         platform = GameObject.FindWithTag("Destroyable");
-        audio = GetComponent<AudioSource>();
+        hasAudio = TryGetComponent(out audio);
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
         anim = GetComponent<Animator>();
@@ -22,7 +23,8 @@ public class LeafPlatform : MonoBehaviour
     
     private void Update()
     {
-        audio.enabled = !GameStates.IsPaused;
+        if (hasAudio)
+            audio.enabled = !GameStates.IsPaused;
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -47,7 +49,8 @@ public class LeafPlatform : MonoBehaviour
 
     IEnumerator Fall()
     {
-        audio.Stop();
+        if (hasAudio)
+            audio.Stop();
         yield return new WaitForSeconds(delay);
         isFalling = true;
         col.isTrigger = true;

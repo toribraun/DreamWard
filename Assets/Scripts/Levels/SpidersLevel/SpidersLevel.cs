@@ -42,6 +42,7 @@ public class SpidersLevel : LevelManager
 
     private IEnumerator EndGame()
     {
+        GameStates.IsWonCurrentLevel = true;
         scoreCounter.SaveHighScore(levelName);
         yield return new WaitForSeconds(5F);
         SceneManager.LoadScene("MenuWin");

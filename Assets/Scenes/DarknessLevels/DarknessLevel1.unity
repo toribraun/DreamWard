@@ -13674,7 +13674,7 @@ EdgeCollider2D:
   - {x: 0.5686599, y: 0.36152115}
   - {x: 1.2041987, y: 0.41838503}
   - {x: 1.9657259, y: 0.2585863}
-  - {x: 2.0706322, y: -0.7717684}
+  - {x: 2.1886485, y: -3.7003076}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -19800,6 +19800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimerText: {fileID: 1684641142}
+  time: 420
   cat: {fileID: 96992699}
   lamp: {fileID: 29424010}
 --- !u!114 &1684641142

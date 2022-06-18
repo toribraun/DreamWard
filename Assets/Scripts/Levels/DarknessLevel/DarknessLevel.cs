@@ -8,6 +8,7 @@ public class DarknessLevel : LevelManager
     private string levelName = "DarknessLevel";
     
     private Lamp lamp;
+    private Timer timer;
     [HideInInspector]
     public Firefly[] fireflies;
     public Firefly GatheredFirefly;
@@ -37,6 +38,13 @@ public class DarknessLevel : LevelManager
         lamp = FindObjectOfType<Lamp>();
         lamp.LevelManager = this;
         lamp.FirefliesLeft = fireflies.Length;
+        
+        timer = FindObjectOfType<Timer>();
+        timer.time = Level switch
+        {
+            3 => 420F,
+            _ => 300F
+        };
     }
 
     public override void Win()

@@ -2,32 +2,22 @@ using UnityEngine;
 
 public class SpiderLegs : MonoBehaviour 
 {
-    // private AudioSource audio;
-    // private Animator animator;
     [SerializeField]
     private float speed = 9F;
     private int rotateLegDirection = -1;
+    private Animator animator;
 
     private void Awake()
     {
-        // audio = GetComponent<AudioSource>();
-        // animator = GetComponent<Animator>();
-        // InvokeRepeating("ChangeRotateLegDirection", 0.01f, 1f);
+        animator = GetComponent<Animator>();
+        animator.speed = 0.3f;
     }
 
     private void Update()
     {
-        // if (GameStates.IsPaused)
-        //     audio.enabled = false;
-        // else
-        //     audio.enabled = true;
-        
         MoveRight(speed);
-    }
-
-    private void ChangeRotateLegDirection()
-    {
-        rotateLegDirection *= -1;
+        if (GameStates.IsWonCurrentLevel)
+            animator.enabled = false;
     }
     
     private void MoveRight(float speed)
@@ -41,8 +31,6 @@ public class SpiderLegs : MonoBehaviour
         //         transform.rotation.w ), speed * Time.deltaTime);
         if (GameStates.IsWonCurrentLevel)
         {
-            // audio.Stop();
-            // animator.SetBool("WaterUp", false);
             transform.position = Vector3.MoveTowards(
                 transform.position, 
                 transform.position - transform.right, speed / 2 * Time.deltaTime);

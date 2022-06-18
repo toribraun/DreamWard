@@ -123,6 +123,55 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &133350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 133351}
+  - component: {fileID: 133352}
+  m_Layer: 5
+  m_Name: Level8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &133351
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133350}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 332495949}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &133352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8d8697207433044ba4e4fa02b8e681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Id: 8
+  LevelName: SpidersLevel3
+  LevelText: Night nine
+  LevelPicture: {fileID: 21300000, guid: 16eae6659d55dd64098c053e4f6d5cc7, type: 3}
+  LevelLostPicture: {fileID: 21300000, guid: 6b550b995db45f04398088c4842e3669, type: 3}
+  LevelWonPicture: {fileID: 21300000, guid: 31bc36ea7072755408d7d9fdd378d709, type: 3}
 --- !u!1 &46657921
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,6 +444,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 232660004}
   m_CullTransparentMesh: 1
+--- !u!1 &269707527
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 269707528}
+  - component: {fileID: 269707529}
+  m_Layer: 5
+  m_Name: Level7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &269707528
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269707527}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 332495949}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &269707529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269707527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8d8697207433044ba4e4fa02b8e681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Id: 7
+  LevelName: DarknessLevel3
+  LevelText: Night eight
+  LevelPicture: {fileID: 21300000, guid: 16eae6659d55dd64098c053e4f6d5cc7, type: 3}
+  LevelLostPicture: {fileID: 21300000, guid: 6b550b995db45f04398088c4842e3669, type: 3}
+  LevelWonPicture: {fileID: 21300000, guid: 31bc36ea7072755408d7d9fdd378d709, type: 3}
 --- !u!1 &332495948
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,6 +525,10 @@ RectTransform:
   - {fileID: 401909133}
   - {fileID: 1169117107}
   - {fileID: 431798769}
+  - {fileID: 454400379}
+  - {fileID: 373155890}
+  - {fileID: 269707528}
+  - {fileID: 133351}
   m_Father: {fileID: 1938812379}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -474,6 +576,55 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &373155889
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 373155890}
+  - component: {fileID: 373155891}
+  m_Layer: 5
+  m_Name: Level6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &373155890
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373155889}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 332495949}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &373155891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373155889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8d8697207433044ba4e4fa02b8e681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Id: 6
+  LevelName: WaterLevel3
+  LevelText: Night seven
+  LevelPicture: {fileID: 21300000, guid: 16eae6659d55dd64098c053e4f6d5cc7, type: 3}
+  LevelLostPicture: {fileID: 21300000, guid: 6b550b995db45f04398088c4842e3669, type: 3}
+  LevelWonPicture: {fileID: 21300000, guid: 31bc36ea7072755408d7d9fdd378d709, type: 3}
 --- !u!1 &401909132
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,6 +720,55 @@ MonoBehaviour:
   Id: 4
   LevelName: DarknessLevel2
   LevelText: Night five
+  LevelPicture: {fileID: 21300000, guid: 16eae6659d55dd64098c053e4f6d5cc7, type: 3}
+  LevelLostPicture: {fileID: 21300000, guid: 6b550b995db45f04398088c4842e3669, type: 3}
+  LevelWonPicture: {fileID: 21300000, guid: 31bc36ea7072755408d7d9fdd378d709, type: 3}
+--- !u!1 &454400378
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 454400379}
+  - component: {fileID: 454400380}
+  m_Layer: 5
+  m_Name: Level5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &454400379
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454400378}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 332495949}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &454400380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454400378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8d8697207433044ba4e4fa02b8e681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Id: 5
+  LevelName: SpidersLevel2
+  LevelText: Night six
   LevelPicture: {fileID: 21300000, guid: 16eae6659d55dd64098c053e4f6d5cc7, type: 3}
   LevelLostPicture: {fileID: 21300000, guid: 6b550b995db45f04398088c4842e3669, type: 3}
   LevelWonPicture: {fileID: 21300000, guid: 31bc36ea7072755408d7d9fdd378d709, type: 3}

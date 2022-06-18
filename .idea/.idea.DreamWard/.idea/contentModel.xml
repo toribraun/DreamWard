@@ -29,9 +29,7 @@
             </e>
             <e p="DestroyablePlatform.cs" t="Include" />
             <e p="GameStates.cs" t="Include" />
-            <e p="LevelInfo.cs" t="Include" />
             <e p="LevelManager.cs" t="Include" />
-            <e p="Levels.cs" t="Include" />
             <e p="ScoreCounter.cs" t="Include" />
             <e p="SpidersLevel" t="Include">
               <e p="LeafPlatform.cs" t="Include" />
@@ -53,6 +51,8 @@
           <e p="Menu" t="Include">
             <e p="HighlightFix.cs" t="Include" />
             <e p="Intro.cs" t="Include" />
+            <e p="LevelInfo.cs" t="Include" />
+            <e p="Levels.cs" t="Include" />
             <e p="LoseMenu.cs" t="Include" />
             <e p="MainMenu.cs" t="Include" />
             <e p="MenuController.cs" t="Include" />

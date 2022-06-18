@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/WaterLevels/WaterLevel2.unity
     guid: 8c31b33c6dc574b72a29c9424ecd9de8
   - enabled: 1
-    path: Assets/Scenes/DarknessLevels/DarknessLevel2.unity
+    path: Assets/Scenes/DarknessLevels/DarknessLevel3.unity
     guid: a7e0cf55de81e4139b2221f80114d99d
   - enabled: 1
     path: Assets/Scenes/SpidersLevels/SpidersLevel2.unity
@@ -56,4 +56,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu/MenuLose.unity
     guid: 94eee998596e38645b90078c3900e44c
+  - enabled: 1
+    path: Assets/Scenes/WaterLevels/WaterLevel3.unity
+    guid: 56bdee0c190864b789b277a76469d4df
+  - enabled: 1
+    path: Assets/Scenes/SpidersLevels/SpidersLevel1.unity
+    guid: 5412947c18ec8439abe1189325d423b2
+  - enabled: 1
+    path: Assets/Scenes/SpidersLevels/SpidersLevel3.unity
+    guid: 206c6507b34cc4a53994836be8532f5a
+  - enabled: 1
+    path: Assets/Scenes/DarknessLevels/DarknessLevel2.unity
+    guid: 5501f0454f0d1428190da20ba9d6478c
   m_configObjects: {}
