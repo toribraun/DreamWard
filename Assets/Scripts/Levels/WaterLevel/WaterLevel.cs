@@ -29,8 +29,7 @@ public class WaterLevel : LevelManager
         water.Speed = Level switch
         {
             1 => 5F,
-            2 => 7F,
-            _ => 9F
+            _ => 7F
         };
     }
 

@@ -20,39 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a50b4b8-a72b-4c8a-94cb-4d6d55037ef0" name="Default Changelist" comment="Add text ui for darkness and spiders levels">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/WaterLevels/WaterLevel3.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/WaterLevels/WaterLevel3.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/DarknessLevels/DarknessLevel3.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/DarknessLevels/DarknessLevel3.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DreamWard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DreamWard/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DarknessLevels/DarknessLevel2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DarknessLevels/DarknessLevel2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SpidersLevels/SpidersLevel2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SpidersLevels/SpidersLevel2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels/DarknessLevel/Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/DarknessLevel/Timer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels/WaterLevel/WaterLevel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/WaterLevel/WaterLevel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0d/0d404ee2f76b00315d384d063a83751e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/2d/2dd5992b5e1ba44c20e3c124871e8741" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/58/58801e1ae073e49def2cf7b97c53d1bf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/5c/5c9a727e77725aacec546e8df50c8417" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/5d/5d0a4ce440d8fb9f72dd68d3fc953f71" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/64/640e653b07f546bd911349bdad2e3e45" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/70/703a7a3889a76249b9c3eb0a02b83c0a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/72/723a80c9794a54d18a5bb5e9f1010d12" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/85/85de778158bd768989f38b0480751332" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/bd/bdce13c1a967dfbbca7cb95cdcd30435" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/dd/dd1c885ce7ec94bf046f659e02ebc7bf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e8/e84d02cf434114bd72f2a3f11d23cb1a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/EditorInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorInstance.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/EditorSnapSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorSnapSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ProtocolInstance.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/34/341efaace6fa4dbb39cd7683490a05af.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/34/341efaace6fa4dbb39cd7683490a05af.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/5b/5b8725b0b969ae5f3f4d7995ecd6d978.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/5b/5b8725b0b969ae5f3f4d7995ecd6d978.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/UnityEditor.UI.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/UnityEditor.UI.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/UnityEngine.UI.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/UnityEngine.UI.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +119,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SpidersLevel/WebSpider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SoundSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Levels/LevelManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Levels/WaterLevel/WaterLevel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Levels/SpidersLevel/SpidersCounter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Levels/DarknessLevel/DarknessLevel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Levels/DarknessLevel/Lamp.cs" />
@@ -149,6 +133,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Levels/WaterLevel/Water.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Levels/SpidersLevel/LeafPlatform.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Levels/SpidersLevel/Spider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Levels/WaterLevel/WaterLevel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Levels/DarknessLevel/Timer.cs" />
       </list>
     </option>
   </component>
@@ -258,6 +244,7 @@
       <workItem from="1651920815765" duration="990000" />
       <workItem from="1654970599475" duration="4780000" />
       <workItem from="1655541634490" duration="440000" />
+      <workItem from="1655542098204" duration="1302000" />
     </task>
     <task id="LOCAL-00001" summary="Init Unity Project">
       <created>1632920463238</created>
@@ -448,7 +435,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655228748802</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Water Level 3">
+      <created>1655542155582</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1655542155582</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,7 +466,6 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="add water at level1" />
     <MESSAGE value="add platforms at level1" />
     <MESSAGE value="win level and followCamera" />
     <MESSAGE value="water sprite" />
@@ -497,17 +490,18 @@
     <MESSAGE value="added borders at SpidersLevel1" />
     <MESSAGE value="Spider level 2 and spider sounds" />
     <MESSAGE value="Add text ui for darkness and spiders levels" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add text ui for darkness and spiders levels" />
+    <MESSAGE value="Water Level 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Water Level 3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="128" y="66" key="MergeDialog" timestamp="1654971034673">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="128" y="66" key="MergeDialog/0.0.1280.800@0.0.1280.800" timestamp="1654971034673" />
-    <state x="240" y="137" key="Vcs.Push.Dialog.v2" timestamp="1655228797527">
+    <state x="240" y="137" key="Vcs.Push.Dialog.v2" timestamp="1655542168302">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="137" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1655228797527" />
+    <state x="240" y="137" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1655542168302" />
     <state x="441" y="318" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1654970982606">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

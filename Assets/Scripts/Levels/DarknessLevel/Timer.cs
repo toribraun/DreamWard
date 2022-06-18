@@ -5,7 +5,7 @@ public class Timer : MonoBehaviour
 {
     [SerializeField]
     public Text TimerText;
-    private float time = 300F;
+    private float time = 420F;
     [SerializeField]
     private Cat cat;
     [SerializeField]
