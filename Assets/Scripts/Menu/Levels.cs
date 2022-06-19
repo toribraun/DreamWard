@@ -51,7 +51,7 @@ public class Levels : MonoBehaviour
         for (var i = 0; i < levels.Length; i++)
         {
             var highScore = PlayerPrefs.GetInt(levels[i].LevelName + "HighScore");
-            //Debug.Log($"{levels[i].LevelName + "HighScore"} is {highScore}");
+            Debug.Log($"{levels[i].LevelName + "HighScore"} is {highScore}");
             // var result = highScore > 0 & highScore < 3500;
             var result = highScore > 0;
             //Debug.Log($"Result is {result}");
@@ -100,9 +100,16 @@ public class Levels : MonoBehaviour
         Previous.interactable = PreviousLevelAvailable;
         Next.interactable = NextLevelAvailable;
 
-        if (PlayerPrefs.GetInt(levels[currentLevelId].LevelName + "HighScore") > 0)
+        var playerHighscore = PlayerPrefs.GetInt(levels[currentLevelId].LevelName + "HighScore");
+
+        if (playerHighscore > 0)
         {
-            levelResultImage.sprite = levels[currentLevelId].LevelWonPicture;
+            if (playerHighscore < levels[currentLevelId].threshold3)
+                levelResultImage.sprite = levels[currentLevelId].LevelWonPicture3;
+            else if (playerHighscore < levels[currentLevelId].threshold2)
+                levelResultImage.sprite = levels[currentLevelId].LevelWonPicture2;
+            else
+                levelResultImage.sprite = levels[currentLevelId].LevelWonPicture1;
         }
         else
         {

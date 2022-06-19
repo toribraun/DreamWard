@@ -169,9 +169,13 @@ MonoBehaviour:
   Id: 8
   LevelName: SpidersLevel3
   LevelText: Night nine
-  LevelPicture: {fileID: 21300000, guid: 16eae6659d55dd64098c053e4f6d5cc7, type: 3}
-  LevelLostPicture: {fileID: 21300000, guid: 6b550b995db45f04398088c4842e3669, type: 3}
-  LevelWonPicture: {fileID: 21300000, guid: 31bc36ea7072755408d7d9fdd378d709, type: 3}
+  LevelPicture: {fileID: 21300000, guid: 2668b211442a4e649a7030b0357b15c8, type: 3}
+  LevelLostPicture: {fileID: 21300000, guid: 351cf376d697a94488e6f4d7f14547be, type: 3}
+  LevelWonPicture1: {fileID: 21300000, guid: 0f85b848a69119340b3b241d00e46dae, type: 3}
+  LevelWonPicture2: {fileID: 21300000, guid: 15574580d78791c42a766ce8af7d7b70, type: 3}
+  LevelWonPicture3: {fileID: 21300000, guid: 118cff8459d8a9b44a82093fc476be9f, type: 3}
+  threshold2: 5000
+  threshold3: 2000
 --- !u!1 &46657921
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,9 +494,13 @@ MonoBehaviour:
   Id: 7
   LevelName: DarknessLevel3
   LevelText: Night eight
-  LevelPicture: {fileID: 21300000, guid: 16eae6659d55dd64098c053e4f6d5cc7, type: 3}
-  LevelLostPicture: {fileID: 21300000, guid: 6b550b995db45f04398088c4842e3669, type: 3}
-  LevelWonPicture: {fileID: 21300000, guid: 31bc36ea7072755408d7d9fdd378d709, type: 3}
+  LevelPicture: {fileID: 21300000, guid: fec03fca3fd76de48854eb4416d256ec, type: 3}
+  LevelLostPicture: {fileID: 21300000, guid: a700353e37680a243a7ac881c6c8ff96, type: 3}
+  LevelWonPicture1: {fileID: 21300000, guid: f1ae014b210637f42a439d1d813fa63c, type: 3}
+  LevelWonPicture2: {fileID: 21300000, guid: 254670af0c0dd4c4093195411bad67ce, type: 3}
+  LevelWonPicture3: {fileID: 21300000, guid: 41e7a1ac604303c4383453f717791732, type: 3}
+  threshold2: 5000
+  threshold3: 2000
 --- !u!1 &332495948
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,9 +630,13 @@ MonoBehaviour:
   Id: 6
   LevelName: WaterLevel3
   LevelText: Night seven
-  LevelPicture: {fileID: 21300000, guid: 16eae6659d55dd64098c053e4f6d5cc7, type: 3}
-  LevelLostPicture: {fileID: 21300000, guid: 6b550b995db45f04398088c4842e3669, type: 3}
-  LevelWonPicture: {fileID: 21300000, guid: 31bc36ea7072755408d7d9fdd378d709, type: 3}
+  LevelPicture: {fileID: 21300000, guid: 7794c4160a28d334584a8693f8b6549b, type: 3}
+  LevelLostPicture: {fileID: 21300000, guid: c2bb6c4986a7def438bee49e4d308bfa, type: 3}
+  LevelWonPicture1: {fileID: 21300000, guid: 6b16392de484f824589bb26c28d7e1d8, type: 3}
+  LevelWonPicture2: {fileID: 21300000, guid: d796457a5d431324897f7ad9eddabe44, type: 3}
+  LevelWonPicture3: {fileID: 21300000, guid: 9c7bc50fe394a9a4190255f9fb13c0a9, type: 3}
+  threshold2: 5000
+  threshold3: 2000
 --- !u!1 &401909132
 GameObject:
   m_ObjectHideFlags: 0
@@ -671,9 +683,13 @@ MonoBehaviour:
   Id: 2
   LevelName: SpidersLevel1
   LevelText: Night three
-  LevelPicture: {fileID: 21300000, guid: 16eae6659d55dd64098c053e4f6d5cc7, type: 3}
-  LevelLostPicture: {fileID: 21300000, guid: 6b550b995db45f04398088c4842e3669, type: 3}
-  LevelWonPicture: {fileID: 21300000, guid: 31bc36ea7072755408d7d9fdd378d709, type: 3}
+  LevelPicture: {fileID: 21300000, guid: 7941bc0b93b024741abccc3c46f1e8c0, type: 3}
+  LevelLostPicture: {fileID: 21300000, guid: 351cf376d697a94488e6f4d7f14547be, type: 3}
+  LevelWonPicture1: {fileID: 21300000, guid: 0f85b848a69119340b3b241d00e46dae, type: 3}
+  LevelWonPicture2: {fileID: 21300000, guid: 15574580d78791c42a766ce8af7d7b70, type: 3}
+  LevelWonPicture3: {fileID: 21300000, guid: 118cff8459d8a9b44a82093fc476be9f, type: 3}
+  threshold2: 5000
+  threshold3: 2000
 --- !u!1 &431798768
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,9 +736,13 @@ MonoBehaviour:
   Id: 4
   LevelName: DarknessLevel2
   LevelText: Night five
-  LevelPicture: {fileID: 21300000, guid: 16eae6659d55dd64098c053e4f6d5cc7, type: 3}
-  LevelLostPicture: {fileID: 21300000, guid: 6b550b995db45f04398088c4842e3669, type: 3}
-  LevelWonPicture: {fileID: 21300000, guid: 31bc36ea7072755408d7d9fdd378d709, type: 3}
+  LevelPicture: {fileID: 21300000, guid: a54d7a922234ada4799fb744626bf12d, type: 3}
+  LevelLostPicture: {fileID: 21300000, guid: a700353e37680a243a7ac881c6c8ff96, type: 3}
+  LevelWonPicture1: {fileID: 21300000, guid: f1ae014b210637f42a439d1d813fa63c, type: 3}
+  LevelWonPicture2: {fileID: 21300000, guid: 254670af0c0dd4c4093195411bad67ce, type: 3}
+  LevelWonPicture3: {fileID: 21300000, guid: 41e7a1ac604303c4383453f717791732, type: 3}
+  threshold2: 5000
+  threshold3: 2000
 --- !u!1 &454400378
 GameObject:
   m_ObjectHideFlags: 0
@@ -769,9 +789,13 @@ MonoBehaviour:
   Id: 5
   LevelName: SpidersLevel2
   LevelText: Night six
-  LevelPicture: {fileID: 21300000, guid: 16eae6659d55dd64098c053e4f6d5cc7, type: 3}
-  LevelLostPicture: {fileID: 21300000, guid: 6b550b995db45f04398088c4842e3669, type: 3}
-  LevelWonPicture: {fileID: 21300000, guid: 31bc36ea7072755408d7d9fdd378d709, type: 3}
+  LevelPicture: {fileID: 21300000, guid: a386dd324188ca24fbc2bbf6bb87ed0f, type: 3}
+  LevelLostPicture: {fileID: 21300000, guid: 351cf376d697a94488e6f4d7f14547be, type: 3}
+  LevelWonPicture1: {fileID: 21300000, guid: 0f85b848a69119340b3b241d00e46dae, type: 3}
+  LevelWonPicture2: {fileID: 21300000, guid: 15574580d78791c42a766ce8af7d7b70, type: 3}
+  LevelWonPicture3: {fileID: 21300000, guid: 118cff8459d8a9b44a82093fc476be9f, type: 3}
+  threshold2: 5000
+  threshold3: 2000
 --- !u!1 &454441698
 GameObject:
   m_ObjectHideFlags: 0
@@ -1540,9 +1564,13 @@ MonoBehaviour:
   Id: 3
   LevelName: WaterLevel2
   LevelText: Night four
-  LevelPicture: {fileID: 21300000, guid: 16eae6659d55dd64098c053e4f6d5cc7, type: 3}
-  LevelLostPicture: {fileID: 21300000, guid: 6b550b995db45f04398088c4842e3669, type: 3}
-  LevelWonPicture: {fileID: 21300000, guid: 31bc36ea7072755408d7d9fdd378d709, type: 3}
+  LevelPicture: {fileID: 21300000, guid: fea06604f80098a4a9b1726b92da0f73, type: 3}
+  LevelLostPicture: {fileID: 21300000, guid: c2bb6c4986a7def438bee49e4d308bfa, type: 3}
+  LevelWonPicture1: {fileID: 21300000, guid: 6b16392de484f824589bb26c28d7e1d8, type: 3}
+  LevelWonPicture2: {fileID: 21300000, guid: d796457a5d431324897f7ad9eddabe44, type: 3}
+  LevelWonPicture3: {fileID: 21300000, guid: 9c7bc50fe394a9a4190255f9fb13c0a9, type: 3}
+  threshold2: 5000
+  threshold3: 2000
 --- !u!1 &1170593626
 GameObject:
   m_ObjectHideFlags: 0
@@ -1905,9 +1933,13 @@ MonoBehaviour:
   Id: 0
   LevelName: WaterLevel1
   LevelText: Night one
-  LevelPicture: {fileID: 21300000, guid: fe583f9a40ffef4499a279e6d3af9a3a, type: 3}
-  LevelLostPicture: {fileID: 21300000, guid: cfe873f0b2d3f7c429565b5c0c424f89, type: 3}
-  LevelWonPicture: {fileID: 21300000, guid: 31bc36ea7072755408d7d9fdd378d709, type: 3}
+  LevelPicture: {fileID: 21300000, guid: b35524ae8dc6c44488b1ed2dd03aba88, type: 3}
+  LevelLostPicture: {fileID: 21300000, guid: c2bb6c4986a7def438bee49e4d308bfa, type: 3}
+  LevelWonPicture1: {fileID: 21300000, guid: 6b16392de484f824589bb26c28d7e1d8, type: 3}
+  LevelWonPicture2: {fileID: 21300000, guid: d796457a5d431324897f7ad9eddabe44, type: 3}
+  LevelWonPicture3: {fileID: 21300000, guid: 9c7bc50fe394a9a4190255f9fb13c0a9, type: 3}
+  threshold2: 5000
+  threshold3: 2000
 --- !u!1 &1487434659
 GameObject:
   m_ObjectHideFlags: 0
@@ -2161,14 +2193,14 @@ RectTransform:
   m_GameObject: {fileID: 1760131758}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.4, y: 3.4, z: 3.1922}
+  m_LocalScale: {x: 4.4096, y: 4.4096, z: 3.519081}
   m_Children: []
   m_Father: {fileID: 454441699}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -144, y: 0}
+  m_AnchoredPosition: {x: -175, y: 22}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1760131760
@@ -2191,7 +2223,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fe583f9a40ffef4499a279e6d3af9a3a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a54d7a922234ada4799fb744626bf12d, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2449,14 +2481,14 @@ RectTransform:
   m_GameObject: {fileID: 2052888220}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.4425004, y: 3.4850001, z: 3.1922}
+  m_LocalScale: {x: 3.8525126, y: 3.9000742, z: 3.5724003}
   m_Children: []
   m_Father: {fileID: 454441699}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 127, y: 117}
+  m_AnchoredPosition: {x: 136, y: 92}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2052888222
@@ -2479,7 +2511,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 31bc36ea7072755408d7d9fdd378d709, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 254670af0c0dd4c4093195411bad67ce, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2543,9 +2575,13 @@ MonoBehaviour:
   Id: 1
   LevelName: DarknessLevel1
   LevelText: Night two
-  LevelPicture: {fileID: 21300000, guid: 16eae6659d55dd64098c053e4f6d5cc7, type: 3}
-  LevelLostPicture: {fileID: 21300000, guid: 6b550b995db45f04398088c4842e3669, type: 3}
-  LevelWonPicture: {fileID: 21300000, guid: 31bc36ea7072755408d7d9fdd378d709, type: 3}
+  LevelPicture: {fileID: 21300000, guid: 4e71d8063c2873841a9b04f846fc5065, type: 3}
+  LevelLostPicture: {fileID: 21300000, guid: a700353e37680a243a7ac881c6c8ff96, type: 3}
+  LevelWonPicture1: {fileID: 21300000, guid: f1ae014b210637f42a439d1d813fa63c, type: 3}
+  LevelWonPicture2: {fileID: 21300000, guid: 254670af0c0dd4c4093195411bad67ce, type: 3}
+  LevelWonPicture3: {fileID: 21300000, guid: 41e7a1ac604303c4383453f717791732, type: 3}
+  threshold2: 5000
+  threshold3: 2000
 --- !u!1 &2103233443
 GameObject:
   m_ObjectHideFlags: 0

@@ -6625,7 +6625,7 @@ MonoBehaviour:
   camera: {fileID: 519420034}
   scoreCounter: {fileID: 0}
   Level: 1
-  levelName: SpidersLevel1
+  levelName: SpidersLevel2
   SpidersLeftCount: 0
   leftBorder: -100
   rightBorder: 650
