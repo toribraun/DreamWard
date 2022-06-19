@@ -7,7 +7,6 @@ public class ScoreCounter : MonoBehaviour
     
     private void Start()
     {
-        // PlayerPrefs.DeleteAll();
         time = 0f;
     }
 
@@ -18,13 +17,14 @@ public class ScoreCounter : MonoBehaviour
 
     public void SaveHighScore(string levelName)
     {
-        var score = Mathf.RoundToInt(time * 100);
         var keyName = levelName + "HighScore";
-        var storedSCore = PlayerPrefs.GetInt(keyName);
-        Debug.Log($"The score is {score})");
+        var storedSCore = PlayerPrefs.GetFloat(keyName);
+        Debug.Log($"The score is {time})");
         Debug.Log($"The stored score is {storedSCore}");
-        if (storedSCore == 0 | storedSCore > Mathf.RoundToInt(score))
-            PlayerPrefs.SetInt(keyName, Mathf.RoundToInt(score));
-        Debug.Log($"After saving the stored score is {PlayerPrefs.GetInt(keyName)}");
+        if (storedSCore == 0 | storedSCore > time)
+            PlayerPrefs.SetFloat(keyName, time);
+        Debug.Log($"After saving the stored score is {PlayerPrefs.GetFloat(keyName)}");
+        PlayerPrefs.SetString("lastLevel", levelName);
+        PlayerPrefs.SetFloat("lastLevelScore", time);
     }
 }

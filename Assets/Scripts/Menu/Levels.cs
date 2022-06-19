@@ -20,6 +20,8 @@ public class Levels : MonoBehaviour
     private GameObject TextGO;
     [SerializeField]
     private GameObject Controller;
+    [SerializeField]
+    private Text bestTime;
 
     private Text text;
     private Image levelImage;
@@ -50,7 +52,7 @@ public class Levels : MonoBehaviour
         // PlayerPrefs.DeleteAll();
         for (var i = 0; i < levels.Length; i++)
         {
-            var highScore = PlayerPrefs.GetInt(levels[i].LevelName + "HighScore");
+            var highScore = PlayerPrefs.GetFloat(levels[i].LevelName + "HighScore");
             Debug.Log($"{levels[i].LevelName + "HighScore"} is {highScore}");
             // var result = highScore > 0 & highScore < 3500;
             var result = highScore > 0;
@@ -97,10 +99,12 @@ public class Levels : MonoBehaviour
     {
         levelImage.sprite = levels[currentLevelId].LevelPicture;
         text.text = levels[currentLevelId].LevelText;
+        var highScore = PlayerPrefs.GetFloat(levels[currentLevelId].LevelName + "HighScore");
+        bestTime.text = highScore == 0 ? "" : $"Best time: {ScoreOutput.TimeToString(highScore)}";
         Previous.interactable = PreviousLevelAvailable;
         Next.interactable = NextLevelAvailable;
 
-        var playerHighscore = PlayerPrefs.GetInt(levels[currentLevelId].LevelName + "HighScore");
+        var playerHighscore = PlayerPrefs.GetFloat(levels[currentLevelId].LevelName + "HighScore");
 
         if (playerHighscore > 0)
         {
