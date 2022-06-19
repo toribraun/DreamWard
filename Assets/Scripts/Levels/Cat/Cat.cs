@@ -12,14 +12,11 @@ public class Cat : Unit
     public float speed = 40F;
     [SerializeField]
     public float jumpforce = 90F;
-
-    public bool IsLowSpeed;
+    
     private bool isGroundNear;
     private bool isWallNear;
     private bool isPlatformNear;
     private bool doubleJumped;
-
-    // public Firefly GatheredFirefly;
 
     private Rigidbody2D rigidbody;
     private Animator animator;
