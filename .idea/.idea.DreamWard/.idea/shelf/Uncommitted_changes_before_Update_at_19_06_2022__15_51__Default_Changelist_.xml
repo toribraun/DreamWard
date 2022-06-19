@@ -1,0 +1,64 @@
+<changelist name="Uncommitted_changes_before_Update_at_19_06_2022,_15_51_[Default_Changelist]" date="1655635897882" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/.idea.DreamWard/.idea/shelf/Uncommitted_changes_before_Update_at_19_06_2022,_15_51_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 19.06.2022, 15:51 [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ArtifactDB" />
+    <option name="AFTER_PATH" value="Library/ArtifactDB" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.DreamWard/.idea/shelf/Uncommitted_changes_before_Update_at_19_06_2022,_15_51_[Default_Changelist]/ArtifactDB" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Assembly-CSharp.dll" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Assembly-CSharp.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.DreamWard/.idea/shelf/Uncommitted_changes_before_Update_at_19_06_2022,_15_51_[Default_Changelist]/Assembly-CSharp.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/ScriptAssemblies/Assembly-CSharp.pdb" />
+    <option name="AFTER_PATH" value="Library/ScriptAssemblies/Assembly-CSharp.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.DreamWard/.idea/shelf/Uncommitted_changes_before_Update_at_19_06_2022,_15_51_[Default_Changelist]/Assembly-CSharp.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/.idea.DreamWard/.idea/shelf/Uncommitted_changes_before_Update_at_11_06_2022,_23_09_[Default_Changelist]/SourceAssetDB" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/.idea.DreamWard/.idea/shelf/Uncommitted_changes_before_Update_at_11_06_2022,_23_09_[Default_Changelist]/UnityEngine.UI.csprojAssemblyReference.cache" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Library/SourceAssetDB" />
+    <option name="AFTER_PATH" value="Library/SourceAssetDB" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.DreamWard/.idea/shelf/Uncommitted_changes_before_Update_at_19_06_2022,_15_51_[Default_Changelist]/SourceAssetDB" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/.idea.DreamWard/.idea/shelf/Uncommitted_changes_before_Update_at_11_06_2022,_23_09_[Default_Changelist]/UnityEditor.UI.csprojAssemblyReference.cache" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/.idea.DreamWard/.idea/shelf/Uncommitted_changes_before_Update_at_11_06_2022,_23_09_[Default_Changelist]/ArtifactDB" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/.idea.DreamWard/.idea/shelf/Uncommitted_changes_before_Update_at_11_06_2022,_23_09_[Default_Changelist]/expandedItems" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" />
+    <option name="AFTER_PATH" value="obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.DreamWard/.idea/shelf/Uncommitted_changes_before_Update_at_19_06_2022,_15_51_[Default_Changelist]/Assembly-CSharp.csprojAssemblyReference.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/.idea.DreamWard/.idea/shelf/Uncommitted_changes_before_Update_at_11_06_2022,_23_09_[Default_Changelist]/Assembly-CSharp.pdb" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".idea/.idea.DreamWard/.idea/shelf/Uncommitted_changes_before_Update_at_11_06_2022,_23_09_[Default_Changelist]/Assembly-CSharp.dll" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+</changelist>
