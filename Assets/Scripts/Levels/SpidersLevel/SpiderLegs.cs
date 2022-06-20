@@ -6,29 +6,24 @@ public class SpiderLegs : MonoBehaviour
     private float speed = 9F;
     private int rotateLegDirection = -1;
     private Animator animator;
+    private bool hasAnimator;
 
     private void Awake()
     {
-        animator = GetComponent<Animator>();
-        animator.speed = 0.3f;
+        hasAnimator = TryGetComponent(out animator);
+        if (hasAnimator)
+            animator.speed = 0.3f;
     }
 
     private void Update()
     {
         MoveRight(speed);
-        if (GameStates.IsWonCurrentLevel)
+        if (hasAnimator && GameStates.IsWonCurrentLevel)
             animator.enabled = false;
     }
     
     private void MoveRight(float speed)
     {
-        // transform.rotation = Quaternion.RotateTowards(
-        //     transform.rotation,
-        //     new Quaternion(
-        //         transform.rotation.x,
-        //         transform.rotation.y,
-        //         transform.rotation.z + rotateLegDirection * 0.01F,
-        //         transform.rotation.w ), speed * Time.deltaTime);
         if (GameStates.IsWonCurrentLevel)
         {
             transform.position = Vector3.MoveTowards(

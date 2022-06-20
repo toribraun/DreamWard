@@ -22,6 +22,9 @@ public class Levels : MonoBehaviour
     private GameObject Controller;
     [SerializeField]
     private Text bestTime;
+    
+    [SerializeField] private Text threshold2;
+    [SerializeField] private Text threshold3;
 
     private Text text;
     private Image levelImage;
@@ -101,6 +104,8 @@ public class Levels : MonoBehaviour
         text.text = levels[currentLevelId].LevelText;
         var highScore = PlayerPrefs.GetFloat(levels[currentLevelId].LevelName + "HighScore");
         bestTime.text = highScore == 0 ? "" : $"Best time: {ScoreOutput.TimeToString(highScore)}";
+        threshold2.text = ScoreOutput.TimeToString(levels[currentLevelId].threshold2 - 1);
+        threshold3.text = ScoreOutput.TimeToString(levels[currentLevelId].threshold3 - 1);
         Previous.interactable = PreviousLevelAvailable;
         Next.interactable = NextLevelAvailable;
 
@@ -108,9 +113,9 @@ public class Levels : MonoBehaviour
 
         if (playerHighscore > 0)
         {
-            if (playerHighscore < levels[currentLevelId].threshold3)
+            if (playerHighscore <= levels[currentLevelId].threshold3)
                 levelResultImage.sprite = levels[currentLevelId].LevelWonPicture3;
-            else if (playerHighscore < levels[currentLevelId].threshold2)
+            else if (playerHighscore <= levels[currentLevelId].threshold2)
                 levelResultImage.sprite = levels[currentLevelId].LevelWonPicture2;
             else
                 levelResultImage.sprite = levels[currentLevelId].LevelWonPicture1;

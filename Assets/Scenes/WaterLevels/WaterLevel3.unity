@@ -1114,6 +1114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6f1d089ca34155a56c450ed68ee888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 0.5
   isFalling: 0
 --- !u!61 &186620893
 BoxCollider2D:
@@ -2285,6 +2286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6f1d089ca34155a56c450ed68ee888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 0.5
   isFalling: 0
 --- !u!61 &261707826
 BoxCollider2D:
@@ -2416,6 +2418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6f1d089ca34155a56c450ed68ee888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 0.5
   isFalling: 0
 --- !u!61 &276838739
 BoxCollider2D:
@@ -3461,6 +3464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6f1d089ca34155a56c450ed68ee888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 0.5
   isFalling: 0
 --- !u!50 &461070152
 Rigidbody2D:
@@ -3588,6 +3592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6f1d089ca34155a56c450ed68ee888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 0.5
   isFalling: 0
 --- !u!61 &478086798
 BoxCollider2D:
@@ -3780,7 +3785,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ca2eca6cf27df4255843a57af4cfbb20, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -6022,6 +6027,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6f1d089ca34155a56c450ed68ee888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 0.5
   isFalling: 0
 --- !u!61 &668443811
 BoxCollider2D:
@@ -7983,6 +7989,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6f1d089ca34155a56c450ed68ee888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 0.5
   isFalling: 0
 --- !u!61 &810655925
 BoxCollider2D:
@@ -8708,6 +8715,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6f1d089ca34155a56c450ed68ee888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 0.5
   isFalling: 0
 --- !u!61 &893134824
 BoxCollider2D:
@@ -9034,6 +9042,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6f1d089ca34155a56c450ed68ee888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 0.5
   isFalling: 0
 --- !u!61 &917391314
 BoxCollider2D:
@@ -10931,6 +10940,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6f1d089ca34155a56c450ed68ee888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 0.5
   isFalling: 0
 --- !u!61 &1045118105
 BoxCollider2D:
@@ -11366,6 +11376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6f1d089ca34155a56c450ed68ee888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 0.5
   isFalling: 0
 --- !u!61 &1112898752
 BoxCollider2D:
@@ -12270,6 +12281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6f1d089ca34155a56c450ed68ee888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 0.5
   isFalling: 0
 --- !u!61 &1177584464
 BoxCollider2D:
@@ -14271,6 +14283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6f1d089ca34155a56c450ed68ee888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 0.5
   isFalling: 0
 --- !u!61 &1436861442
 BoxCollider2D:
@@ -14852,6 +14865,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6f1d089ca34155a56c450ed68ee888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 0.5
   isFalling: 0
 --- !u!61 &1584132361
 BoxCollider2D:
@@ -14983,6 +14997,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6f1d089ca34155a56c450ed68ee888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 0.5
   isFalling: 0
 --- !u!61 &1590516718
 BoxCollider2D:
@@ -15240,6 +15255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6f1d089ca34155a56c450ed68ee888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 0.5
   isFalling: 0
 --- !u!61 &1600110884
 BoxCollider2D:
@@ -15469,6 +15485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6f1d089ca34155a56c450ed68ee888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 0.5
   isFalling: 0
 --- !u!61 &1624480411
 BoxCollider2D:
@@ -16279,6 +16296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6f1d089ca34155a56c450ed68ee888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 0.5
   isFalling: 0
 --- !u!61 &1651687003
 BoxCollider2D:
@@ -16654,7 +16672,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e1b803032de0640e387d6f74a6671ae3, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.8
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -17525,6 +17543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6f1d089ca34155a56c450ed68ee888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 0.5
   isFalling: 0
 --- !u!61 &1848270843
 BoxCollider2D:
@@ -18986,6 +19005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6f1d089ca34155a56c450ed68ee888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 0.5
   isFalling: 0
 --- !u!61 &1961532960
 BoxCollider2D:
@@ -20315,6 +20335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6f1d089ca34155a56c450ed68ee888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 0.5
   isFalling: 0
 --- !u!61 &2095716798
 BoxCollider2D:
@@ -20462,6 +20483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6f1d089ca34155a56c450ed68ee888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 0.5
   isFalling: 0
 --- !u!61 &2110199074
 BoxCollider2D:

@@ -14,6 +14,7 @@ public class LeafPlatform : MonoBehaviour
 
     private void Start()
     {
+        delay = 1f;
         platform = GameObject.FindWithTag("Destroyable");
         hasAudio = TryGetComponent(out audio);
         rb = GetComponent<Rigidbody2D>();

@@ -6,7 +6,7 @@ public class DestroyablePlatform : MonoBehaviour
     private GameObject platform;
     private Rigidbody2D rb;
     private Collider2D col;
-    private float delay = 0.5F;
+    public float delay = 0.5F;
     public bool isFalling;
 
     private void Start()

@@ -44,6 +44,8 @@ public class SpidersLevel : LevelManager
     {
         GameStates.IsWonCurrentLevel = true;
         scoreCounter.SaveHighScore(levelName);
+        var cameraAnimator = camera.GetComponentInChildren<Animator>();
+        cameraAnimator.Play("CameraLight");
         yield return new WaitForSeconds(5F);
         SceneManager.LoadScene("MenuWin");
     }
